@@ -1,9 +1,0 @@
-name: 'Twig Typography Test'
-type: module
-description: 'Support module for testing the Twig Typography extension.'
-package: Testing
-
-# Information added by Drupal.org packaging script on 2022-08-01
-version: '2.1.2'
-project: 'twig_typography'
-datestamp: 1659334691

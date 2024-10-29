@@ -1,7 +1,0 @@
-name: Video Embed Vk
-type: module
-description: 'A video_embed_field integration with Vk.'
-package: Video Embed Field
-core_version_requirement: ^8 || ^9 || ^10 || ^11
-dependencies:
-  - video_embed_field:video_embed_field
