@@ -1,7 +1,0 @@
-name: Mirtek
-type: module
-description: Mirtekgroup
-package: Mirtek
-core_version_requirement: ^9 || ^10
-dependencies:
-  - user
