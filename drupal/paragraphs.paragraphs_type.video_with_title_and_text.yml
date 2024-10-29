@@ -1,0 +1,10 @@
+uuid: e059e06f-4875-4ea5-ab5a-40504a904a56
+langcode: ru
+status: true
+dependencies: {  }
+id: video_with_title_and_text
+label: 'Видео с заголовком, текстом и ссылкой'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

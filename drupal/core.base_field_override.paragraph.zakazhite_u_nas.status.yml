@@ -1,0 +1,22 @@
+uuid: 10549241-d2e2-47b3-aa91-efcb528e50a7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.zakazhite_u_nas
+id: paragraph.zakazhite_u_nas.status
+field_name: status
+entity_type: paragraph
+bundle: zakazhite_u_nas
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

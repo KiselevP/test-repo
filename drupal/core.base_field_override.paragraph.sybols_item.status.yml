@@ -1,0 +1,22 @@
+uuid: fdee89b2-d630-42e5-b0bb-be602c3c6371
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.sybols_item
+id: paragraph.sybols_item.status
+field_name: status
+entity_type: paragraph
+bundle: sybols_item
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

@@ -1,0 +1,12 @@
+/README.txt
+
+/development.services.yml
+/default/default.services.yml
+/default/default.settings.php
+example.settings.local.php
+example.sites.php
+
+
+/files/*
+/*/files/*
+

@@ -1,0 +1,22 @@
+uuid: 5a96ef78-007b-4096-9b34-b96a19a23f2a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.telephone
+id: paragraph.telephone.status
+field_name: status
+entity_type: paragraph
+bundle: telephone
+label: Опубликовано
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

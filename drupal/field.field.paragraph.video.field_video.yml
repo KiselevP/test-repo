@@ -1,0 +1,27 @@
+uuid: 034d16ba-c4d8-4ab4-80e4-4dbda24e3908
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - video_embed_field
+id: paragraph.video.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: video
+label: Видеоинструкция
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    rutube: rutube
+    vk: vk
+    youtube_playlist: '0'
+    vimeo: '0'
+field_type: video_embed_field

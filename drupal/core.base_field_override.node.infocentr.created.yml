@@ -1,0 +1,18 @@
+uuid: 788cdf9b-9223-4bf3-b75d-6e4adc1edbea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.created
+field_name: created
+entity_type: node
+bundle: infocentr
+label: 'Создан в'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

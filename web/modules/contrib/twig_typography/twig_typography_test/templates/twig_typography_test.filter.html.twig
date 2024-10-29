@@ -1,0 +1,15 @@
+<div class="test-typography">
+  <div>
+    {{ message_first|typography }}
+  </div>
+  <div>
+    {{ message_second|typography }}
+  </div>
+  <div>
+    {{
+      message_third|typography({
+        set_style_hanging_punctuation: true
+      })
+    }}
+  </div>
+</div>

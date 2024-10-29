@@ -1,0 +1,23 @@
+mirtek_product.type_add:
+  title: 'Add mirtek product type'
+  route_name: entity.mirtek_product_type.add_form
+  appears_on:
+    - entity.mirtek_product_type.collection
+
+#mirtek_product.add_page:
+#  title: 'Add mirtek product'
+#  route_name: entity.mirtek_product.add_page
+#  appears_on:
+#    - entity.mirtek_product.collection
+
+mirtek_product_group.type_add:
+  title: 'Add mirtek product group type'
+  route_name: entity.mirtek_product_group_type.add_form
+  appears_on:
+    - entity.mirtek_product_group_type.collection
+
+mirtek_product_group.add_page:
+  title: 'Add mirtek product group'
+  route_name: entity.mirtek_product_group.add_page
+  appears_on:
+    - entity.mirtek_product_group.collection

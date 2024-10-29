@@ -1,0 +1,8 @@
+uuid: 715bd926-6f27-45ce-a6ff-ae6ad13d1239
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Теги новостей'
+vid: tags_news
+description: ''
+weight: 0

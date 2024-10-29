@@ -1,0 +1,22 @@
+uuid: 20b450cb-1850-41f7-a3cb-91da238a6bbc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.headline_text
+id: paragraph.headline_text.status
+field_name: status
+entity_type: paragraph
+bundle: headline_text
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

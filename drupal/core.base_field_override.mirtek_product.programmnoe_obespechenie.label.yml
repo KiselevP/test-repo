@@ -1,0 +1,18 @@
+uuid: eeefcd06-836c-490b-b606-72070f5f306f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+id: mirtek_product.programmnoe_obespechenie.label
+field_name: label
+entity_type: mirtek_product
+bundle: programmnoe_obespechenie
+label: Метка
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 49e398b1-01e4-4ec0-a0b4-ee220f97fa68
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.zagolovok_i_opisanie
+id: paragraph.zagolovok_i_opisanie.created
+field_name: created
+entity_type: paragraph
+bundle: zagolovok_i_opisanie
+label: 'Создан в'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

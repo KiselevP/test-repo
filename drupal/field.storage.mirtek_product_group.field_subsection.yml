@@ -1,0 +1,20 @@
+uuid: 88ab3566-8655-468f-a5ab-62b04934ff8b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - mirtek
+    - taxonomy
+id: mirtek_product_group.field_subsection
+field_name: field_subsection
+entity_type: mirtek_product_group
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

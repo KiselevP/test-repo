@@ -1,0 +1,10 @@
+uuid: 6697f199-11c3-4fbd-af2f-e12128cb72f0
+langcode: ru
+status: true
+dependencies: {  }
+id: image_with_title_and_text
+label: 'Картинка с заголовком и текстом'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

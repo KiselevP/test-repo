@@ -1,0 +1,5 @@
+{% block paragraph %}
+        {% block content %}
+                <div>{{ content.field_text|without('#theme') }}</div>
+        {% endblock %}
+{% endblock paragraph %}

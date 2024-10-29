@@ -1,0 +1,91 @@
+uuid: 50900b52-8989-4f68-abe9-0d5f31cd99ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_kompaniya_v_cifrah_item
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah_item
+  module:
+    - entity_reference_revisions
+id: paragraph.kompaniya_v_cifrah.field_kompaniya_v_cifrah_item
+field_name: field_kompaniya_v_cifrah_item
+entity_type: paragraph
+bundle: kompaniya_v_cifrah
+label: 'Компания в цифрах элемент'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      kompaniya_v_cifrah_item: kompaniya_v_cifrah_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_headline_text:
+        weight: 23
+        enabled: false
+      big_image_with_headline_text:
+        weight: 24
+        enabled: false
+      headline:
+        weight: 25
+        enabled: false
+      headline_text:
+        weight: 26
+        enabled: false
+      image:
+        weight: 27
+        enabled: false
+      image_with_title_and_text:
+        weight: 28
+        enabled: false
+      kompaniya_v_cifrah:
+        weight: 29
+        enabled: false
+      kompaniya_v_cifrah_item:
+        weight: 22
+        enabled: true
+      numbered_section:
+        weight: 30
+        enabled: false
+      numbered_section_item:
+        weight: 31
+        enabled: false
+      otzyv:
+        weight: 32
+        enabled: false
+      produkciya_block:
+        weight: 33
+        enabled: false
+      proizvodstvo_block:
+        weight: 34
+        enabled: false
+      row_novosti:
+        weight: 35
+        enabled: false
+      slider:
+        weight: 36
+        enabled: false
+      sybols:
+        weight: 37
+        enabled: false
+      sybols_item:
+        weight: 38
+        enabled: false
+      uslugi_block:
+        weight: 39
+        enabled: false
+      video_with_title_and_text:
+        weight: 40
+        enabled: false
+      zakazhite_u_nas:
+        weight: 41
+        enabled: false
+      zakazhite_u_nas_item:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

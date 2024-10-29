@@ -1,0 +1,24 @@
+uuid: bd4a9664-ea5c-45bd-9ad5-3cde459dfbfa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tehnologicheskoe_partnyorstvo
+  module:
+    - text
+id: node.tehnologicheskoe_partnyorstvo.body
+field_name: body
+entity_type: node
+bundle: tehnologicheskoe_partnyorstvo
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

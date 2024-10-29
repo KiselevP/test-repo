@@ -1,0 +1,18 @@
+uuid: db59f796-0b05-4ea9-b02e-4faf98572fdd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.term_products
+id: taxonomy_term.term_products.name
+field_name: name
+entity_type: taxonomy_term
+bundle: term_products
+label: Название
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

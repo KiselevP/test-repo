@@ -1,0 +1,11 @@
+uuid: 08bd4c92-bd8f-463a-b348-56a225ccd39c
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.tags
+label: Теги
+description: ''
+targetEntityType: taxonomy_term
+cache: true

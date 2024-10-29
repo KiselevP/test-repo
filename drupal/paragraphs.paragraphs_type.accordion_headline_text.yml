@@ -1,0 +1,10 @@
+uuid: 004826c3-058c-415c-a79d-8f0b95faae13
+langcode: ru
+status: true
+dependencies: {  }
+id: accordion_headline_text
+label: 'Accordion headline & text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

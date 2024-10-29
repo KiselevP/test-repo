@@ -1,0 +1,22 @@
+uuid: b988019e-31e3-4b29-9237-96557567f255
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah_item
+  module:
+    - text
+id: paragraph.kompaniya_v_cifrah_item.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: kompaniya_v_cifrah_item
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

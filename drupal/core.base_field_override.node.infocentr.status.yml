@@ -1,0 +1,22 @@
+uuid: 38b5db7a-b1db-43d5-b2c0-cb7471887eb8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.status
+field_name: status
+entity_type: node
+bundle: infocentr
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

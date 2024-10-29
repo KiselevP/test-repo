@@ -1,0 +1,20 @@
+uuid: c6ac44d5-4101-4a4a-98b8-b6b7cafecbfa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+id: mirtek_product.programmnoe_obespechenie.uid
+field_name: uid
+entity_type: mirtek_product
+bundle: programmnoe_obespechenie
+label: Автор
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\mirtek\Entity\MirtekProduct::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

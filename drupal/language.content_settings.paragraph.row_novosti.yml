@@ -1,0 +1,18 @@
+uuid: 6ead1457-9111-4c45-abfd-6005fdcd5cb2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.row_novosti
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.row_novosti
+target_entity_type_id: paragraph
+target_bundle: row_novosti
+default_langcode: site_default
+language_alterable: false

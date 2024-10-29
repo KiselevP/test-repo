@@ -1,0 +1,18 @@
+uuid: d714c48d-2b92-4808-8a43-700f56a8a6c2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.sybols_item
+id: paragraph.sybols_item.created
+field_name: created
+entity_type: paragraph
+bundle: sybols_item
+label: 'Создан в'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,140 @@
+uuid: 339ceb0d-941a-4740-af8c-8b7f1d273c56
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.page
+    - paragraphs.paragraphs_type.big_image_with_headline_text
+    - paragraphs.paragraphs_type.file
+    - paragraphs.paragraphs_type.headline
+    - paragraphs.paragraphs_type.headline_text
+    - paragraphs.paragraphs_type.image_with_title_and_text
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah
+    - paragraphs.paragraphs_type.nam_doveryayut_block
+    - paragraphs.paragraphs_type.numbered_section
+    - paragraphs.paragraphs_type.produkciya_block
+    - paragraphs.paragraphs_type.proizvodstvo_block
+    - paragraphs.paragraphs_type.row_novosti
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.uslugi_block
+    - paragraphs.paragraphs_type.video_with_title_and_text
+    - paragraphs.paragraphs_type.zakazhite_u_nas
+  module:
+    - entity_reference_revisions
+id: node.page.field_content
+field_name: field_content
+entity_type: node
+bundle: page
+label: Контент
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      video_with_title_and_text: video_with_title_and_text
+      slider: slider
+      headline_text: headline_text
+      numbered_section: numbered_section
+      image_with_title_and_text: image_with_title_and_text
+      proizvodstvo_block: proizvodstvo_block
+      uslugi_block: uslugi_block
+      headline: headline
+      big_image_with_headline_text: big_image_with_headline_text
+      row_novosti: row_novosti
+      produkciya_block: produkciya_block
+      zakazhite_u_nas: zakazhite_u_nas
+      nam_doveryayut_block: nam_doveryayut_block
+      kompaniya_v_cifrah: kompaniya_v_cifrah
+      file: file
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_headline_text:
+        weight: 8
+        enabled: false
+      big_image_with_headline_text:
+        weight: 16
+        enabled: true
+      dokumentaciya:
+        weight: 30
+        enabled: false
+      email:
+        weight: 31
+        enabled: false
+      file:
+        weight: 33
+        enabled: true
+      headline:
+        weight: 15
+        enabled: true
+      headline_text:
+        weight: 9
+        enabled: true
+      image:
+        weight: 17
+        enabled: false
+      image_with_title_and_text:
+        weight: 11
+        enabled: true
+      kompaniya_v_cifrah:
+        weight: 29
+        enabled: true
+      kompaniya_v_cifrah_item:
+        weight: 22
+        enabled: false
+      nam_doveryayut_block:
+        weight: 23
+        enabled: true
+      numbered_section:
+        weight: 9
+        enabled: true
+      numbered_section_item:
+        weight: 10
+        enabled: false
+      otzyv:
+        weight: 10
+        enabled: false
+      produkciya_block:
+        weight: 18
+        enabled: true
+      proizvodstvo_block:
+        weight: 14
+        enabled: true
+      row_novosti:
+        weight: 17
+        enabled: true
+      slider:
+        weight: 8
+        enabled: true
+      sybols:
+        weight: 11
+        enabled: false
+      sybols_item:
+        weight: 12
+        enabled: false
+      telephone:
+        weight: 48
+        enabled: false
+      uslugi_block:
+        weight: 14
+        enabled: true
+      video:
+        weight: 50
+        enabled: false
+      video_with_title_and_text:
+        weight: 7
+        enabled: true
+      zagolovok_i_opisanie:
+        weight: 52
+        enabled: false
+      zakazhite_u_nas:
+        weight: 20
+        enabled: true
+      zakazhite_u_nas_item:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

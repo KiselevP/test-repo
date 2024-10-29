@@ -1,0 +1,18 @@
+uuid: 04041934-6724-4c40-8cd4-a1fb4ab72113
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_group_type.programmnoe_obespechenie
+id: mirtek_product_group.programmnoe_obespechenie.created
+field_name: created
+entity_type: mirtek_product_group
+bundle: programmnoe_obespechenie
+label: 'Создан в'
+description: 'The time that the mirtek product group was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,10 @@
+uuid: 67dc1434-c771-4c59-8aad-4e80483eb149
+langcode: ru
+status: true
+dependencies: {  }
+id: zagolovok_i_opisanie
+label: 'Заголовок и описание (Контакт)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

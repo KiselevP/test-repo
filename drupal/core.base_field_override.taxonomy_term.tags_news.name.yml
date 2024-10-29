@@ -1,0 +1,18 @@
+uuid: c2fc445f-8d9c-4564-b5ff-ad7715ca9176
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_news
+id: taxonomy_term.tags_news.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tags_news
+label: Название
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

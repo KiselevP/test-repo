@@ -1,0 +1,15 @@
+uuid: f43a87a5-cd9e-4556-a4cb-1249c1e74b98
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Тестовая таксономия'
+vid: testovaya_taksonomiya
+description: ''
+weight: 0

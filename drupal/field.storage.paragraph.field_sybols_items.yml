@@ -1,0 +1,20 @@
+uuid: f8613a5f-fb86-4fad-a058-246ae9f5b762
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_sybols_items
+field_name: field_sybols_items
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

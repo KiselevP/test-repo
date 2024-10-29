@@ -1,0 +1,18 @@
+uuid: 26eb5ba9-7068-4121-b7c2-6d2b2090e3dc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: mirtek_product.programmnoe_obespechenie
+target_entity_type_id: mirtek_product
+target_bundle: programmnoe_obespechenie
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 05040f84-9170-4d0a-a5e9-d0162d8a3d13
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.proizvodstvo_block.field_title
+    - paragraphs.paragraphs_type.proizvodstvo_block
+id: paragraph.proizvodstvo_block.default
+targetEntityType: paragraph
+bundle: proizvodstvo_block
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

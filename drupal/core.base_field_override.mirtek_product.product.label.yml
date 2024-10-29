@@ -1,0 +1,18 @@
+uuid: 7734bdb6-f7f9-4a04-8c78-f55fb701e9e0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.product
+id: mirtek_product.product.label
+field_name: label
+entity_type: mirtek_product
+bundle: product
+label: Метка
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

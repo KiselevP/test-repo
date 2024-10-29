@@ -1,0 +1,18 @@
+uuid: 5ffb6f71-fbeb-4ca3-b87a-0a9430b61379
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.news
+id: node.news.changed
+field_name: changed
+entity_type: node
+bundle: news
+label: Изменение
+description: 'Время последнего редактирования материала.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

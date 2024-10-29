@@ -1,0 +1,29 @@
+uuid: 2531a866-cd7a-4987-a748-98539d0b4169
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_div
+    - paragraphs.paragraphs_type.zakazhite_u_nas
+  module:
+    - heading
+id: paragraph.zakazhite_u_nas.field_headline_div
+field_name: field_headline_div
+entity_type: paragraph
+bundle: zakazhite_u_nas
+label: Загловок
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  label: Заголовок
+  allowed_sizes:
+    h1: h1
+    h2: h2
+    h3: h3
+    h4: h4
+    h5: h5
+    h6: h6
+field_type: heading

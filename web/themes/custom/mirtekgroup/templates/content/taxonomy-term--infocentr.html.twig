@@ -1,0 +1,47 @@
+{#
+/**
+ * @file
+ * Theme override to display a taxonomy term.
+ *
+ * Available variables:
+ * - url: URL of the current term.
+ * - name: (optional) Name of the current term.
+ * - content: Items for the content of the term (fields and description).
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.description'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('description') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - page: Flag for the full page state.
+ * - term: The taxonomy term entity, including:
+ *   - id: The ID of the taxonomy term.
+ *   - bundle: Machine name of the current vocabulary.
+ * - view_mode: View mode, e.g. 'full', 'teaser', etc.
+ *
+ * @see template_preprocess_taxonomy_term()
+ */
+#}
+  {% if name and not page %}
+    <a href="{{ url }}" class="infocentr-link">
+        <div class="row">
+            <div class="infocentr-content">
+                <div class="title">{{ name|without('#theme') }}</div>
+                <div  class="button-more-black">
+                    {{ "Подробнее"|t }}
+                    <span class="icon">
+                        <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.0896 27.2977C25.0064 27.2977 17.0192 27.2977 9 27.2977C9 25.7806 9 24.2761 9 22.7338C16.9936 22.7338 25 22.7338 33.1024 22.7338C30.6192 19.75 28.2 16.8417 25.7552 13.8957C26.9456 12.9326 28.1296 11.982 29.352 11C33.2304 15.6583 37.1024 20.3228 41 25C37.1216 29.6583 33.2496 34.3228 29.352 39C28.1488 38.0306 26.9648 37.0737 25.7552 36.1106C28.2 33.1897 30.6192 30.2689 33.0896 27.2977Z" fill="#1D1D1D"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="infocentr-image">
+                {{- content.field_image|without('#theme') -}}
+            </div>
+        </div>
+    </a>
+  {% endif %}
+
+

@@ -1,0 +1,34 @@
+uuid: 9c0fdabf-e376-407a-abfb-18f1158b9afb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sybols_item.field_headline
+    - field.field.paragraph.sybols_item.field_text
+    - paragraphs.paragraphs_type.sybols_item
+  module:
+    - text
+id: paragraph.sybols_item.default
+targetEntityType: paragraph
+bundle: sybols_item
+mode: default
+content:
+  field_headline:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

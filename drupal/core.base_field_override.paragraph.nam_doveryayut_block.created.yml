@@ -1,0 +1,18 @@
+uuid: 51a59242-1c32-4d6f-a5c6-52f1afed231d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nam_doveryayut_block
+id: paragraph.nam_doveryayut_block.created
+field_name: created
+entity_type: paragraph
+bundle: nam_doveryayut_block
+label: 'Создан в'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

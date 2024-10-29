@@ -1,0 +1,90 @@
+uuid: b7561c9a-ef83-4d20-852d-655a570fd902
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.mirtek_product.teaser
+    - field.field.mirtek_product.programmnoe_obespechenie.field_body
+    - field.field.mirtek_product.programmnoe_obespechenie.field_country
+    - field.field.mirtek_product.programmnoe_obespechenie.field_feature
+    - field.field.mirtek_product.programmnoe_obespechenie.field_group_products
+    - field.field.mirtek_product.programmnoe_obespechenie.field_image
+    - field.field.mirtek_product.programmnoe_obespechenie.field_images
+    - field.field.mirtek_product.programmnoe_obespechenie.field_related_products
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+  module:
+    - image
+    - text
+id: mirtek_product.programmnoe_obespechenie.teaser
+targetEntityType: mirtek_product
+bundle: programmnoe_obespechenie
+mode: teaser
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_feature:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_related_products:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  status:
+    type: boolean
+    label: above
+    settings:
+      format: enabled-disabled
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_country: true
+  field_group_products: true
+  langcode: true
+  uid: true

@@ -1,0 +1,18 @@
+uuid: b8a7f8b8-4f03-42bb-a421-07b0b5ba6bbe
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tehnologicheskoe_partnyorstvo
+id: node.tehnologicheskoe_partnyorstvo.changed
+field_name: changed
+entity_type: node
+bundle: tehnologicheskoe_partnyorstvo
+label: Изменение
+description: 'Время последнего редактирования материала.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

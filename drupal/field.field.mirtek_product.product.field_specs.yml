@@ -1,0 +1,24 @@
+uuid: 15c0c477-5004-479d-ae63-1b3c73e69f5e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_specs
+    - filter.format.full_html
+    - mirtek.mirtek_product_type.product
+  module:
+    - text
+id: mirtek_product.product.field_specs
+field_name: field_specs
+entity_type: mirtek_product
+bundle: product
+label: Характеристики
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

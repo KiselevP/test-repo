@@ -1,0 +1,33 @@
+uuid: df4b499a-67e9-4e91-872c-2721bb224f49
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.kompaniya_v_cifrah.field_headline_div
+    - field.field.paragraph.kompaniya_v_cifrah.field_kompaniya_v_cifrah_item
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah
+  module:
+    - entity_reference_revisions
+    - heading
+id: paragraph.kompaniya_v_cifrah.default
+targetEntityType: paragraph
+bundle: kompaniya_v_cifrah
+mode: default
+content:
+  field_headline_div:
+    type: heading
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_kompaniya_v_cifrah_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

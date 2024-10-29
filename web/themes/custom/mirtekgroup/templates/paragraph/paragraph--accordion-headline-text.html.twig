@@ -1,0 +1,8 @@
+{% block paragraph %}
+        {% block content %}
+            <div class="paragraph--accordion-headline-text">
+                <div class="h4">{{ content.field_accordion_title|without('#theme') }}</div>
+                <div class="description">{{ content.field_accordion_text|without('#theme') }}</div>
+            </div>
+        {% endblock %}
+{% endblock paragraph %}

@@ -1,0 +1,18 @@
+uuid: fe5fa707-0a6b-454d-9c30-76eaaa42d352
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.product
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: mirtek_product.product
+target_entity_type_id: mirtek_product
+target_bundle: product
+default_langcode: site_default
+language_alterable: false

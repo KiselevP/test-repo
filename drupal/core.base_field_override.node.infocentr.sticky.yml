@@ -1,0 +1,22 @@
+uuid: dd4108db-3f6f-4fe9-ac5d-db80dc96696c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.sticky
+field_name: sticky
+entity_type: node
+bundle: infocentr
+label: 'Закреплять вверху списков'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

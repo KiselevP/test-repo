@@ -1,0 +1,22 @@
+uuid: 97ea015b-07d5-4d2a-a14d-f97ab7331c31
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.zakazhite_u_nas_item
+  module:
+    - text
+id: paragraph.zakazhite_u_nas_item.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: zakazhite_u_nas_item
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

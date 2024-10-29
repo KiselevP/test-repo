@@ -1,0 +1,22 @@
+uuid: cd5cf868-ce2d-45a8-a306-5a53df236d36
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.big_image_with_headline_text
+  module:
+    - text
+id: paragraph.big_image_with_headline_text.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: big_image_with_headline_text
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

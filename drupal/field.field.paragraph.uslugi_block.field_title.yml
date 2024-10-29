@@ -1,0 +1,19 @@
+uuid: ac9a501d-c41f-439a-96f9-b0194958a1bf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.uslugi_block
+id: paragraph.uslugi_block.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: uslugi_block
+label: Заголовок
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

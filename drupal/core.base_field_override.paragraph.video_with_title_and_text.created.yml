@@ -1,0 +1,18 @@
+uuid: 61cc2fd6-34a3-4ecb-a9d1-1fbd927ce3ba
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.video_with_title_and_text
+id: paragraph.video_with_title_and_text.created
+field_name: created
+entity_type: paragraph
+bundle: video_with_title_and_text
+label: 'Создан в'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

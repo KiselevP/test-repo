@@ -1,0 +1,18 @@
+uuid: fb9a40db-9daf-4c8a-a99a-78341dfeb10f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_group_type.product_teaser
+id: mirtek_product_group.product_teaser.changed
+field_name: changed
+entity_type: mirtek_product_group
+bundle: product_teaser
+label: Изменение
+description: 'The time that the mirtek product group was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

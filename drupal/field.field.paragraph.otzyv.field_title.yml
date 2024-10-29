@@ -1,0 +1,19 @@
+uuid: 7b62ab5d-caa3-43cd-b38f-3e23d52414d1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.otzyv
+id: paragraph.otzyv.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: otzyv
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

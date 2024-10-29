@@ -1,0 +1,20 @@
+uuid: aec3059c-def2-467c-9967-0bb4aa46d14c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_news
+  module:
+    - path
+id: taxonomy_term.tags_news.path
+field_name: path
+entity_type: taxonomy_term
+bundle: tags_news
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

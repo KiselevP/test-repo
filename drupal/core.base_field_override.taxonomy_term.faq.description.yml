@@ -1,0 +1,21 @@
+uuid: 708d331a-d8fe-4e15-9d28-a409b4aa51ab
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.faq
+  module:
+    - text
+id: taxonomy_term.faq.description
+field_name: description
+entity_type: taxonomy_term
+bundle: faq
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

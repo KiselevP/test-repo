@@ -1,0 +1,18 @@
+uuid: 8c203500-2f66-48c8-b9b5-2f13473fe533
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.faq
+id: taxonomy_term.faq.name
+field_name: name
+entity_type: taxonomy_term
+bundle: faq
+label: Название
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

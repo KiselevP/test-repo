@@ -1,0 +1,6 @@
+uuid: 07be43b7-36f6-4e55-9016-3f0e98bf35a8
+langcode: ru
+status: true
+dependencies: {  }
+id: programmnoe_obespechenie
+label: 'Программное обеспечение'

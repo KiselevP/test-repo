@@ -1,0 +1,31 @@
+uuid: 65e58e25-8deb-461e-9ab2-834f4d4fbbf4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.zagolovok_i_opisanie.field_headline_div
+    - field.field.paragraph.zagolovok_i_opisanie.field_opisanie
+    - paragraphs.paragraphs_type.zagolovok_i_opisanie
+  module:
+    - heading
+    - text
+id: paragraph.zagolovok_i_opisanie.default
+targetEntityType: paragraph
+bundle: zagolovok_i_opisanie
+mode: default
+content:
+  field_headline_div:
+    type: heading
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_opisanie:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

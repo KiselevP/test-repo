@@ -1,0 +1,41 @@
+enabled: true
+local_task_label: 'Clone Product'
+fields:
+  langcode:
+    id: copy_values
+  label:
+    id: copy_values
+  status:
+    id: copy_values
+  uid:
+    id: copy_values
+  created:
+    id: copy_values
+  changed:
+    id: copy_values
+  default_langcode:
+    id: copy_values
+  field_body:
+    id: copy_values
+  field_country:
+    id: copy_values
+  field_dimensions:
+    id: copy_values
+  field_extra:
+    id: copy_values
+  field_feature:
+    id: copy_values
+  field_group_products:
+    id: copy_values
+  field_image:
+    id: copy_values
+  field_images:
+    id: copy_values
+  field_performances:
+    id: copy_values
+  field_related_products:
+    id: copy_values
+  field_specs:
+    id: copy_values
+  field_sybols:
+    id: copy_values

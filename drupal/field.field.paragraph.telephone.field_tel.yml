@@ -1,0 +1,21 @@
+uuid: bf5b1aca-5cd2-4ad5-839b-183f779eba6e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tel
+    - paragraphs.paragraphs_type.telephone
+  module:
+    - telephone
+id: paragraph.telephone.field_tel
+field_name: field_tel
+entity_type: paragraph
+bundle: telephone
+label: Телефон
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

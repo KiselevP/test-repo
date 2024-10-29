@@ -1,0 +1,658 @@
+.paragraph .content{
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.paragraph p{
+    padding: 0;
+    margin: 0;
+}
+
+.paragraph a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.paragraph .h2{
+    padding-bottom: 20px;
+}
+
+.paragraph-otzyv {
+    position: relative;
+}
+
+.paragraph-otzyv .link-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+.paragraph-otzyv .item {
+    max-width: 340px;
+    max-height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.paragraph-otzyv .item .image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.paragraph-otzyv .item img {
+    border-radius: 4px 4px 0px 0px;
+    width: 100%;
+    height: auto;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.paragraph-otzyv .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 4px 0px 0px;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-otzyv .item .overlay .icon {
+    width: 120px;
+    height: 120px;
+    background: url('/themes/custom/mirtekgroup/images/icon/scale.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.paragraph-otzyv .item:hover .overlay {
+    opacity: 1;
+}
+
+.paragraph-otzyv .item:hover img {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+.paragraph-otzyv .item .item-bottom {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    justify-content: space-between;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid var(--gray_03, #E4E4E4);
+    background: var(--white, #FFF);
+    z-index: 5;
+}
+
+.paragraph-otzyv .item .item-bottom .otzyv-icon{
+    display: inline-block;
+    background: url(/themes/custom/mirtekgroup/images/icon/copy.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.copy-notification {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #000000;
+    width: 440px;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 19px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    z-index: 1000;
+}
+
+.copy-notification.show {
+    display: block;
+}
+.homepage .paragraph--type--video-with-title-and-text .content{
+    gap: 100px;
+}
+
+.paragraph--type--video-with-title-and-text .content{
+    padding: 20px 0px 60px;
+}
+
+.paragraph--type--video-with-title-and-text .content .item{
+    display: flex;
+    flex-direction: column;
+    color: var(--text_black, #1D1D1D);
+}
+
+.homepage .paragraph--type--video-with-title-and-text .content .item:first-child{
+    gap: 30px;
+}
+
+.paragraph--type--video-with-title-and-text .paragraph-video .video-embed,
+.paragraph-video .ytp-cued-thumbnail-overlay-image {
+    position: relative;
+    width: 700px;
+    height: 400px;
+}
+
+.paragraph--type--video-with-title-and-text .paragraph-video .video-embed{
+    width: 535px;
+    height: 300px;
+}
+
+.paragraph--type--video-with-title-and-text .paragraph-video .video-embed img{
+    width: 100%;
+    height: 100%;
+}
+
+.paragraph.paragraph-video .video-title{
+    color: var(--text_black, #1D1D1D);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.paragraph.paragraph-video .video-embed{
+    width: 580px;
+    height: 326px;
+}
+
+.paragraph.paragraph-video .video-embed img{
+    width: 100%;
+    height: 100%;
+}
+
+.paragraph-video .video-preview,
+.paragraph-video .ytp-cued-thumbnail-overlay-image {
+    width: 100%;
+    height: 100%;
+}
+
+.paragraph-video .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: url(/themes/custom/mirtekgroup/images/icon/play.svg) no-repeat;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+    .paragraph-video .video-embed,
+    .paragraph-video .ytp-cued-thumbnail-overlay-image {
+        width: 470px;
+        height: 268px;
+    }
+
+    .paragraph-video .video-preview,
+    .paragraph-video .ytp-cued-thumbnail-overlay-image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.paragraph-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.paragraph-video {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.paragraph--numbered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 0px;
+    box-sizing: border-box;
+}
+
+.paragraph--numbered-section .counter {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--main, #0E8BC2);
+}
+
+.paragraph--numbered-section .content {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.paragraph--numbered-section .content div{
+    display: flex;
+    gap: 20px;
+}
+
+.paragraph--numbered-section .content div > div{
+    width: calc(33.333% - 20px);
+}
+
+.paragraph--numbered-section .content .paragraph-text {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paragraph--numbered-section-item{
+    flex-direction: column;
+    width: 340px;
+    padding: 20px;
+}
+
+.kompaniya .paragraph--numbered-section-item{
+    flex-direction: column;
+    width: 460px;
+    padding: 0;
+}
+
+.paragraph--numbered-section-item h3{
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph--numbered-section-item .content{
+    display: flex;
+    flex-direction: column;
+}
+.paragraph--numbered-section-item .paragraph-text div{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph--numbered-section-item .paragraph-text ,
+.paragraph--numbered-section-item .paragraph-text div,
+.paragraph--numbered-section-item .paragraph-text div > div{
+    width: 100%!important;
+}
+
+.paragraph--numbered-section .paragraph--numbered-section-item .paragraph-text p{
+    padding: 0;
+    margin: 0;
+}
+
+.paragraph--image-with-title-and-text .paragraph--headline-text .h3{
+    max-width: 330px;
+}
+
+.paragraph--image-with-title-and-text .content{
+    gap: 50px;
+}
+
+.proizvodstvo-full .paragraph.paragraph--headline-text,
+.service-full .paragraph.paragraph--headline-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paragraph--headline-text .paragraph-text p{
+    padding: 10px 0px 30px 0px;
+    margin: 0!important;
+}
+
+.proizvodstvo-full .paragraph--headline-text .paragraph-text p,
+.service-full .paragraph--headline-text .paragraph-text p{
+    padding: 0;
+}
+
+.paragraph--image-with-title-and-text .content.image-position-right,
+.paragraph--big-image-with-headline-text .content.image-position-right{
+    flex-direction: row-reverse;
+}
+
+.paragraph--image-with-title-and-text .content img{
+    max-width: 670px;
+    max-height: 740px;
+}
+
+.paragraph--big-image-with-headline-text .content{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paragraph--big-image-with-headline-text .content .h1{
+    font-size: 39px;
+}
+.paragraph--big-image-with-headline-text .content .item:last-child{
+    max-width: 518px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.paragraph--big-image-with-headline-text .content .item:last-child p{
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.paragraph .item a{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.paragraph .item .section-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.paragraph .item .section-buttons a{
+    padding: 10px 20px 8px 20px;
+    border-radius: 3px;
+    border: 2px solid var(--main, #0E8BC2);
+    background: var(--main, #0E8BC2);
+}
+
+.homepage .paragraph--type--video-with-title-and-text .item .section-buttons a{
+    border-radius: 3px;
+    border: 2px solid var(--main, #0E8BC2);
+    background: var(--main, #0E8BC2);
+    font-size: 14px;
+    display: flex;
+    max-width: 123px;
+    padding: 8px 44px 6px 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.paragraph .item .section-buttons a:hover{
+    border: 2px solid var(--main_02, #0C7EB0);
+    background: var(--main_02, #0C7EB0);
+}
+
+.paragraph .item .section-buttons a:active{
+    border: 2px solid var(--main_03, #0E6084);
+    background: var(--main_03, #0E6084);
+}
+
+.paragraph--proizvodstvo-block{
+    padding-top: 60px;
+}
+
+.paragraph--row-novosti .content{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0px 20px 20px 20px !important;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+}
+
+.paragraph--row-novosti {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--main, #0E8BC2);
+}
+
+.paragraph--row-novosti .news-item{
+    position: relative;
+    display: flex;
+    width: 326px;
+    /*height: 134px;*/
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--white, #FFF);
+}
+
+.paragraph--row-novosti .views-row::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 0;
+    left: 10px;
+    width: 2px;
+    height: 5%;
+    background-color: var(--white, #FFF);
+}
+
+.paragraph--row-novosti .news-item .news-date{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.paragraph--row-novosti .news-item .news-date .news-day{
+    font-size: 23px;
+}
+
+.paragraph--row-novosti .news-item .news-date div:last-child{
+    font-size: 10px;
+}
+
+.paragraph--row-novosti .news-item .news-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.paragraph--row-novosti .section-buttons{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 3px;
+    border: 2px solid #FFF;
+}
+
+.paragraph--row-novosti .section-buttons a{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 8px 20px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.paragraph--row-novosti .section-buttons:hover{
+    /* neon_form_button */
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.60);
+}
+
+.paragraph--produkciya-block{
+    padding: 140px 0px;
+}
+
+.paragraph--zakazhite-u-nas{
+    background: var(--main, #0E8BC2);
+    color: var(--white, #FFF);
+    padding: 40px 0px 80px;
+}
+
+.homepage .paragraph--zakazhite-u-nas .h2,
+.homepage .paragraph--zakazhite-u-nas .h3{
+    color: var(--white, #FFF);
+}
+
+.paragraph--zakazhite-u-nas .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.paragraph--zakazhite-u-nas .service-items{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.paragraph--zakazhite-u-nas .service-items .service-item{
+    display: flex;
+    max-width: 340px;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 2px solid var(--white, #FFF);
+}
+
+.paragraph--zakazhite-u-nas .service-items .service-item p{
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.paragraph--zakazhite-u-nas .service-items .service-item:hover{
+    border: 2px solid var(--white, #FFF);
+    box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.70);
+}
+
+.paragraph--kompaniya-v-cifrah .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 140px 0px;
+}
+
+.paragraph--kompaniya-v-cifrah .big-text-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragraph--kompaniya-v-cifrah .big-text-items .big-text-item{
+    display: flex;
+    max-width: 660px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.paragraph--kompaniya-v-cifrah .content .big-text-item div:last-child{
+    font-size: 18px;
+}
+
+.paragraph--kompaniya-v-cifrah .content .big-text-item .item-up{
+    max-height: 140px;
+    display: flex;
+    gap: 10px;
+}
+
+.paragraph--kompaniya-v-cifrah .content .big-text-item .item-up .title{
+    color: var(--main, #0E8BC2);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 102px;
+}
+
+.paragraph--kompaniya-v-cifrah .content .big-text-item .item-up .right-text{
+    color: var(--main, #0E8BC2);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 55px;
+}
+
+.paragraph--kompaniya-v-cifrah .content .big-text-item .item-up img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.paragraph--nam-doveryayut-block{
+    padding-top: 140px;
+}
+
+.paragraph--nam-doveryayut-block .content{
+    width: 100%;
+    max-width: calc(100vw - 20px);
+    margin: 0 auto;
+    display: block;
+}
+
+
+.paragraph--nam-doveryayut-block .content img{
+    max-width: 150px;
+    height: auto;
+}
+
+.paragraph--nam-doveryayut-block .content .trust-us-item{
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph--type--video .video-embed-field-provider-rutube{
+    margin-top: 20px;
+}
+
+.paragraph--type--zagolovok-i-opisanie::before,
+.paragraph--type--telephone::before,
+.paragraph--type--email::before{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--main, #0E8BC2);
+    position: absolute;
+    /*left: 22px;*/
+    left: -20px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.paragraph--type--zagolovok-i-opisanie,
+.paragraph--type--telephone,
+.paragraph--type--email{
+    position: relative;
+}
+
+.paragraph--accordion-headline-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paragraph.paragraph-video{
+    max-width: 580px;
+    /*padding-top: ;*/
+}

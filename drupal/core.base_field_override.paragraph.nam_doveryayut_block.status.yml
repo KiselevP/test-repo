@@ -1,0 +1,22 @@
+uuid: dd9389de-fea0-463e-9328-3ac45e9c0fa4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nam_doveryayut_block
+id: paragraph.nam_doveryayut_block.status
+field_name: status
+entity_type: paragraph
+bundle: nam_doveryayut_block
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

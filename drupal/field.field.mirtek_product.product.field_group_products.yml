@@ -1,0 +1,29 @@
+uuid: 3347f970-b1a1-450c-bbf2-c08e588e05c9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_group_products
+    - mirtek.mirtek_product_group_type.product_teaser
+    - mirtek.mirtek_product_type.product
+id: mirtek_product.product.field_group_products
+field_name: field_group_products
+entity_type: mirtek_product
+bundle: product
+label: 'Группа продукта'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:mirtek_product_group'
+  handler_settings:
+    target_bundles:
+      product_teaser: product_teaser
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: ab907a7c-ac9e-40b3-bedb-2717a7ebdfb7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.zakazhite_u_nas_item
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.zakazhite_u_nas_item
+target_entity_type_id: paragraph
+target_bundle: zakazhite_u_nas_item
+default_langcode: site_default
+language_alterable: false

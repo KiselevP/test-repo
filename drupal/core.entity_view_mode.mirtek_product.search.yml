@@ -1,0 +1,11 @@
+uuid: 357dee3c-e9e7-43f5-a08b-56a4b9fa7716
+langcode: ru
+status: true
+dependencies:
+  module:
+    - mirtek
+id: mirtek_product.search
+label: Search
+description: ''
+targetEntityType: mirtek_product
+cache: true

@@ -1,0 +1,32 @@
+uuid: 442210a6-d14f-4e98-8b2e-df730f29875b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.proizvodstvo_item.field_content
+    - field.field.node.proizvodstvo_item.field_image_preview
+    - node.type.proizvodstvo_item
+  module:
+    - image
+    - user
+id: node.proizvodstvo_item.teaser
+targetEntityType: node
+bundle: proizvodstvo_item
+mode: teaser
+content:
+  field_image_preview:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_content: true
+  langcode: true
+  links: true

@@ -1,0 +1,18 @@
+uuid: 0c2229a6-823d-4d64-9ca9-34f932f1a1e6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_group_type.programmnoe_obespechenie
+id: mirtek_product_group.programmnoe_obespechenie.label
+field_name: label
+entity_type: mirtek_product_group
+bundle: programmnoe_obespechenie
+label: Метка
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

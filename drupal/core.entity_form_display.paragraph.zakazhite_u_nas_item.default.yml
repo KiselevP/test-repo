@@ -1,0 +1,44 @@
+uuid: 3f78c502-c1a5-47dc-a94f-fc28817c15ac
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.zakazhite_u_nas_item.field_description
+    - field.field.paragraph.zakazhite_u_nas_item.field_headline_div
+    - field.field.paragraph.zakazhite_u_nas_item.field_img
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.zakazhite_u_nas_item
+  module:
+    - heading
+    - image
+    - text
+id: paragraph.zakazhite_u_nas_item.default
+targetEntityType: paragraph
+bundle: zakazhite_u_nas_item
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_headline_div:
+    type: heading
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_img:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

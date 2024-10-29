@@ -1,0 +1,77 @@
+uuid: a1e86917-c132-4d91-96e4-1c6728f36d71
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.mirtek_product_group.product_teaser.field_image
+    - field.field.mirtek_product_group.product_teaser.field_short_feature
+    - field.field.mirtek_product_group.product_teaser.field_subsection
+    - field.field.mirtek_product_group.product_teaser.field_tags
+    - field.field.mirtek_product_group.product_teaser.field_tip_produkcii
+    - mirtek.mirtek_product_group_type.product_teaser
+  module:
+    - image
+    - text
+id: mirtek_product_group.product_teaser.default
+targetEntityType: mirtek_product_group
+bundle: product_teaser
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_short_feature:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subsection:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_tags:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: tags
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  mirtek_product:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: mini
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_tip_produkcii: true
+  langcode: true
+  status: true
+  uid: true

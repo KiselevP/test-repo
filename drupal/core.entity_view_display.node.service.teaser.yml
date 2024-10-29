@@ -1,0 +1,32 @@
+uuid: 6bf3b763-2fc9-4c7b-bee8-8adb05ee2fdc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.field_content
+    - field.field.node.service.field_image_preview
+    - node.type.service
+  module:
+    - image
+    - user
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  field_image_preview:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_content: true
+  langcode: true
+  links: true

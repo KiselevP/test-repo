@@ -1,0 +1,22 @@
+uuid: 6e2ed523-7fb8-4bf2-9229-a725f2111839
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tehnologicheskoe_partnyorstvo
+id: node.tehnologicheskoe_partnyorstvo.status
+field_name: status
+entity_type: node
+bundle: tehnologicheskoe_partnyorstvo
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

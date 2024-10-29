@@ -1,0 +1,22 @@
+uuid: 3305d04d-37bb-4f62-b74f-f4f2cf2bd8f1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.trust_us
+id: node.trust_us.promote
+field_name: promote
+entity_type: node
+bundle: trust_us
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

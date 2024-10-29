@@ -1,0 +1,21 @@
+uuid: eece1812-fc3b-4c4f-9f3e-c834bba54947
+langcode: ru
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - mirtek
+    - paragraphs
+id: mirtek_product.field_performances
+field_name: field_performances
+entity_type: mirtek_product
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

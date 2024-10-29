@@ -1,0 +1,22 @@
+uuid: 5be92013-4a92-4dee-be15-9bbb97e670cd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_formatted
+    - paragraphs.paragraphs_type.numbered_section
+  module:
+    - text
+id: paragraph.numbered_section.field_title_formatted
+field_name: field_title_formatted
+entity_type: paragraph
+bundle: numbered_section
+label: Заголовок
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

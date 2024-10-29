@@ -1,0 +1,20 @@
+uuid: 94920d90-cc87-433b-9186-223203c04b53
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_group_type.product_teaser
+id: mirtek_product_group.product_teaser.uid
+field_name: uid
+entity_type: mirtek_product_group
+bundle: product_teaser
+label: Автор
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\mirtek\Entity\MirtekProductGroup::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

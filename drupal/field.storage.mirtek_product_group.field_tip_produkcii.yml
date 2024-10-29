@@ -1,0 +1,20 @@
+uuid: 3a358266-920d-42d4-9fca-ba9f20f7de1d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - mirtek
+    - taxonomy
+id: mirtek_product_group.field_tip_produkcii
+field_name: field_tip_produkcii
+entity_type: mirtek_product_group
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

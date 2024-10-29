@@ -1,0 +1,18 @@
+uuid: 1ccbf5a9-712d-4335-a89c-10bb211596f8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accordion_headline_text
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.accordion_headline_text
+target_entity_type_id: paragraph
+target_bundle: accordion_headline_text
+default_langcode: site_default
+language_alterable: false
