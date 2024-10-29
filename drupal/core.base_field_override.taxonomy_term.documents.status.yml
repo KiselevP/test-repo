@@ -1,0 +1,22 @@
+uuid: f17932fc-6114-4ea6-a27d-e62945bbcd31
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.documents
+id: taxonomy_term.documents.status
+field_name: status
+entity_type: taxonomy_term
+bundle: documents
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

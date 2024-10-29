@@ -1,0 +1,22 @@
+uuid: df53b51c-1373-47ba-a868-4621d6408fad
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: usluga
+label: Услуга
+type: 'canonical_entities:node'
+pattern: '/uslugi/[node:title]'
+selection_criteria:
+  07353b22-c73c-46e3-b53e-7de177467510:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 07353b22-c73c-46e3-b53e-7de177467510
+    context_mapping:
+      node: node
+    bundles:
+      service: service
+selection_logic: and
+weight: -5
+relationships: {  }

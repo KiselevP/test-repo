@@ -1,0 +1,22 @@
+uuid: ffa34c72-3e61-4e83-87d3-d76b40424af1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.sybols_item
+  module:
+    - text
+id: paragraph.sybols_item.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: sybols_item
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

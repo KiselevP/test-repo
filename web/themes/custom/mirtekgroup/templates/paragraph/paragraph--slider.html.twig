@@ -1,0 +1,47 @@
+{%
+    set classes = [
+    'paragraph',
+    'wrapper',
+]
+%}
+{{ attach_library('mirtekgroup/swiper') }}
+
+{% block paragraph %}
+        {% block content %}
+            <div class="paragraph paragraph--type--slider wrapper">
+                {% if content.field_title %}
+                    <h2>{{ content.field_title }}</h2>
+{#                    {{ dump(content.field_type_slider )}}#}
+                {% endif %}
+                <div class="swiper {{ class_type_slide }}">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        {% for item in content.field_image['#items'] %}
+                            <div class="swiper-slide">
+                                {% set image_file = item.entity %}
+                                {% if class_type_slide == 'swiper-product' or class_type_slide == 'swiper-carousel' %}
+                                    <a href="{{ file_url(image_file.uri.value) }}" aria-controls="colorbox" class="colorbox cboxElement colorbox-example3" data-colorbox-gallery="productGallery" role="button" data-once="init-colorbox">
+                                        <img src="{{ file_url(image_file.uri.value) }}" alt="{{ image_file.alt }}">
+                                    </a>
+                                {% endif %}
+                                {% if class_type_slide == 'swiper-row' %}
+                                    <img src="{{ file_url(image_file.uri.value) }}" alt="{{ item.field_title }}">
+                                    <div class="swiper-alt">{{ item.alt }}</div>
+                                    <div class="swiper-title h3">{{ item.title }}</div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% if class_type_slide == 'swiper-product' or class_type_slide == 'swiper-carousel' %}
+                        <div class="test">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+                    {% endif %}
+                </div>
+            </div>
+        {% endblock %}
+{% endblock paragraph %}

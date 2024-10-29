@@ -1,0 +1,12 @@
+{%
+  set classes = [
+  'node',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}'>
+  <div class="trust-us-item">
+      <a href="{{ url }}"></a>
+      {{ content.field_image|without('#theme') }}
+  </div>
+</article>

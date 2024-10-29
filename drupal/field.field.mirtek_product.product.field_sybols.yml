@@ -1,0 +1,40 @@
+uuid: 093a8f87-41b1-4205-86b3-f68d645ecb9a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_sybols
+    - mirtek.mirtek_product_type.product
+    - paragraphs.paragraphs_type.sybols
+  module:
+    - entity_reference_revisions
+id: mirtek_product.product.field_sybols
+field_name: field_sybols
+entity_type: mirtek_product
+bundle: product
+label: 'Условные обозначения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      sybols: sybols
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_headline_text:
+        weight: 5
+        enabled: false
+      headline_text:
+        weight: 5
+        enabled: false
+      sybols:
+        weight: 6
+        enabled: true
+      sybols_item:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,14 @@
+{% block paragraph %}
+    {% block content %}
+        <div class="paragraph paragraph--kompaniya-v-cifrah">
+            {% if content %}
+                <div class="content wrapper">
+                    {{ content.field_headline_div|without('#theme') }}
+                    <div class="big-text-items">{{ content.field_kompaniya_v_cifrah_item|without('#theme') }}</div>
+                </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endblock paragraph %}
+
+

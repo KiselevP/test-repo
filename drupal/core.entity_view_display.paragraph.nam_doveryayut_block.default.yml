@@ -1,0 +1,22 @@
+uuid: d22e8889-3f96-4722-af06-2259069786d9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nam_doveryayut_block.field_headline_div
+    - paragraphs.paragraphs_type.nam_doveryayut_block
+  module:
+    - heading
+id: paragraph.nam_doveryayut_block.default
+targetEntityType: paragraph
+bundle: nam_doveryayut_block
+mode: default
+content:
+  field_headline_div:
+    type: heading
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

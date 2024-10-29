@@ -1,0 +1,17 @@
+{%
+  set classes = [
+  'node',
+  'proizvodstvo-full',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+    <div class="proizvodstvo-title h1">{{ node.label|typography }}</div>
+    <div class="container">
+        <div class="content">
+            {% if content %}
+                {{ content }}
+            {% endif %}
+        </div>
+    </div>
+</article>

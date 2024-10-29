@@ -1,0 +1,11 @@
+uuid: 8aaada83-b051-46f2-8ea8-237ef3925752
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tehnologicheskoe_partnyorstvo
+id: node.tehnologicheskoe_partnyorstvo
+target_entity_type_id: node
+target_bundle: tehnologicheskoe_partnyorstvo
+default_langcode: site_default
+language_alterable: false

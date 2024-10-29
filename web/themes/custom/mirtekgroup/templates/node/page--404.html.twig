@@ -1,0 +1,23 @@
+{%
+  set classes = [
+  'node',
+  'wrapper',
+  'page-error',
+]
+%}
+<article{{ attributes.addClass(classes) }} style='background-image: url({{- background -}})'>
+  {# Лого и заголовок #}
+    <div class="navbar-brand">
+        <a href="https://mirtekgroup.com" class="logo-link"></a>
+    </div>
+    <div class="content">
+        <div class="error-number"><p>4</p><p class="zero">0</p><p>4</p></div>
+        <div class="error-text">
+            {{ "Oops, something went wrong..."|t }}
+            <p class="text-small">{{ "We could not find the page you are looking for."|t }}</p>
+        </div>
+        <a class="btn-home" href="/" target="_blank">
+            <span class="label">{{ 'homepage'|t }}</span>
+        </a>
+    </div>
+</article>

@@ -1,0 +1,20 @@
+uuid: 11f1eea5-8084-47a4-af53-28c3be348ff2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regiony
+  module:
+    - path
+id: taxonomy_term.regiony.path
+field_name: path
+entity_type: taxonomy_term
+bundle: regiony
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

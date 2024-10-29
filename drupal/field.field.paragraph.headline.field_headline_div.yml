@@ -1,0 +1,29 @@
+uuid: b5cb6da7-473b-4ec0-99c2-af1e30238667
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_div
+    - paragraphs.paragraphs_type.headline
+  module:
+    - heading
+id: paragraph.headline.field_headline_div
+field_name: field_headline_div
+entity_type: paragraph
+bundle: headline
+label: Загловок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  label: Заголовок
+  allowed_sizes:
+    h1: h1
+    h2: h2
+    h3: h3
+    h4: h4
+    h5: h5
+    h6: h6
+field_type: heading

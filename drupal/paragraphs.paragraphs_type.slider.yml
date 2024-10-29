@@ -1,0 +1,10 @@
+uuid: 545ca0ca-e7bb-4a62-af2b-89b38185b8a0
+langcode: ru
+status: true
+dependencies: {  }
+id: slider
+label: Слайдер
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

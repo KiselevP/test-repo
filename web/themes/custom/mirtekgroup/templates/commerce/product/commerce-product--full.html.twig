@@ -1,0 +1,73 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+    set classes = [
+    'product-full',
+]
+%}
+
+<article{{ attributes.addClass(classes) }} >
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="box-product">
+        <div class="product-item-1">
+            <div class="product-variations">{{- product.variations|without('#theme') -}}</div>
+            {% if product.variation_title is not empty %}
+                <h2 class="product-title">{{- product.variation_title|without('#theme') -}}</h2>
+            {% endif %}
+            {% if product.body is not empty %}
+            <div class="product-body">{{- product.body|without('#theme') -}}</div>
+            {% endif %}
+        </div>
+        {% if product.field_image['#items'] is not empty and product.field_image['#items'].entity.uri.value is not empty %}
+        <div class="product-item-2">
+            <div class="product-image">{{- product.field_image|without('#theme') -}}</div>
+        </div>
+        {% endif %}
+    </div>
+    <div class="product-screens">
+        <h2>Скриншоты</h2>
+        <div class="gallery">
+        {{- product.field_screens -}}
+        </div>
+    </div>
+    <div class="product-feature">
+        <h2>Ключевые особенности</h2>
+        <div class="feature-items">
+            {{- product.field_feature|without('#theme') -}}
+        </div>
+        {% if product.field_add_feature['#title'] is not empty %}
+            <h2>Дополнительно</h2>
+            {{- product.field_add_feature|without('#theme') -}}
+        {% endif %}
+    </div>
+    <div class="product-docs">
+        <h2>Документация</h2>
+        <div class="doc-items">
+            {{ drupal_view('docs_in_produkt') }}
+        </div>
+    </div>
+</article>

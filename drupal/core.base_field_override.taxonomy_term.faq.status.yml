@@ -1,0 +1,22 @@
+uuid: d22651b2-452f-4014-a043-aa2c802dd821
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.faq
+id: taxonomy_term.faq.status
+field_name: status
+entity_type: taxonomy_term
+bundle: faq
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

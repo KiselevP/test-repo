@@ -1,0 +1,19 @@
+{% block paragraph %}
+        {% block content %}
+            <div class="paragraph paragraph-video">
+                {% if content.field_video|render %}
+                    <div class="video-title">{{ 'Video instructions'|t }}</div>
+                    {# Используем кастомное превью #}
+                    <div class="video-embed">
+                        <img src="{{ content.field_video['#video_embed_field_preview_image'] }}" alt="Custom preview" class="video-preview" data-video-url="{{ content.field_video[0].children['#url'] }}"/>
+                        <span class="play-icon"></span>
+                    </div>
+                {% else %}
+                    <div class="video-embed">
+                        {# Если нету видео выводим саму картинку превьюшки #}
+                        {{ content.field_img|without('#theme') }}
+                    </div>
+                {% endif %}
+            </div>
+        {% endblock %}
+{% endblock paragraph %}

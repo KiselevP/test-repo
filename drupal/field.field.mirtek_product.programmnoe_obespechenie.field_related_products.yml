@@ -1,0 +1,28 @@
+uuid: 720af4b4-547e-4113-8e93-b95237bbfb2e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_related_products
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+id: mirtek_product.programmnoe_obespechenie.field_related_products
+field_name: field_related_products
+entity_type: mirtek_product
+bundle: programmnoe_obespechenie
+label: 'Сопутствующая продукция'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:mirtek_product'
+  handler_settings:
+    target_bundles:
+      programmnoe_obespechenie: programmnoe_obespechenie
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: programmnoe_obespechenie
+field_type: entity_reference

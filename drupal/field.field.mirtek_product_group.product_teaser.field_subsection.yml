@@ -1,0 +1,29 @@
+uuid: 5e5fb24e-60a8-478e-8a0d-848cf22075f1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product_group.field_subsection
+    - mirtek.mirtek_product_group_type.product_teaser
+    - taxonomy.vocabulary.term_products
+id: mirtek_product_group.product_teaser.field_subsection
+field_name: field_subsection
+entity_type: mirtek_product_group
+bundle: product_teaser
+label: Подраздел
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      term_products: term_products
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

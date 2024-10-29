@@ -1,0 +1,18 @@
+uuid: 1cfef08a-18b1-4dda-b051-1fe66613b11f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.title
+field_name: title
+entity_type: node
+bundle: infocentr
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: af9d6b71-7534-4d81-80ca-1045bb93b849
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: tehnologicheskoe_partnyorstvo
+label: 'Технологическое партнёрство'
+type: 'canonical_entities:node'
+pattern: '/kompaniya/tehnologicheskoe-partnyorstvo/[node:title]'
+selection_criteria:
+  5037de1e-4d05-4160-a872-bdca80d3ae56:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5037de1e-4d05-4160-a872-bdca80d3ae56
+    context_mapping:
+      node: node
+    bundles:
+      tehnologicheskoe_partnyorstvo: tehnologicheskoe_partnyorstvo
+selection_logic: and
+weight: -5
+relationships: {  }

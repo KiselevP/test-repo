@@ -1,0 +1,33 @@
+uuid: 4688ad90-0fbb-4f88-8a6e-2a91535dd11a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_section.field_numbered_section_item
+    - field.field.paragraph.numbered_section.field_title_formatted
+    - paragraphs.paragraphs_type.numbered_section
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.numbered_section.default
+targetEntityType: paragraph
+bundle: numbered_section
+mode: default
+content:
+  field_numbered_section_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title_formatted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

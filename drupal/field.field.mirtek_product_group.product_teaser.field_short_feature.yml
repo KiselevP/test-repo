@@ -1,0 +1,22 @@
+uuid: 38d7bf36-5c51-404f-9328-1f408936a518
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product_group.field_short_feature
+    - mirtek.mirtek_product_group_type.product_teaser
+  module:
+    - text
+id: mirtek_product_group.product_teaser.field_short_feature
+field_name: field_short_feature
+entity_type: mirtek_product_group
+bundle: product_teaser
+label: 'Краткая характеристика'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

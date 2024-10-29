@@ -1,0 +1,49 @@
+uuid: 02e1506e-6d16-4413-9659-f51267b8a5d0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.map_marker.body
+    - field.field.node.map_marker.field_city
+    - field.field.node.map_marker.field_company
+    - field.field.node.map_marker.field_coordinates
+    - field.field.node.map_marker.field_data
+    - field.field.node.map_marker.field_note
+    - field.field.node.map_marker.field_weight
+    - node.type.map_marker
+  module:
+    - user
+id: node.map_marker.teaser
+targetEntityType: node
+bundle: map_marker
+mode: teaser
+content:
+  field_city:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_company:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_coordinates: true
+  field_data: true
+  field_note: true
+  field_weight: true
+  langcode: true

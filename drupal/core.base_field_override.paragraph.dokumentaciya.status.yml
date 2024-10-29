@@ -1,0 +1,22 @@
+uuid: a5ebdb89-7851-436f-aaea-4ce0013a7c45
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.dokumentaciya
+id: paragraph.dokumentaciya.status
+field_name: status
+entity_type: paragraph
+bundle: dokumentaciya
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 881747a0-1950-45de-9a45-853bd1314faa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.file.field_file
+    - paragraphs.paragraphs_type.file
+  module:
+    - file
+id: paragraph.file.default
+targetEntityType: paragraph
+bundle: file
+mode: default
+content:
+  field_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

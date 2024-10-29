@@ -1,0 +1,22 @@
+uuid: f8395da4-1659-493f-876b-512b8e459718
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product_group.field_short_feature
+    - mirtek.mirtek_product_group_type.programmnoe_obespechenie
+  module:
+    - text
+id: mirtek_product_group.programmnoe_obespechenie.field_short_feature
+field_name: field_short_feature
+entity_type: mirtek_product_group
+bundle: programmnoe_obespechenie
+label: 'Краткая характеристика'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

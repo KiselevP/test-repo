@@ -1,0 +1,29 @@
+uuid: e7737cdc-baf4-4267-b7cf-9e92be839300
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.infocentr
+    - taxonomy.vocabulary.infocentr
+id: node.infocentr.field_section
+field_name: field_section
+entity_type: node
+bundle: infocentr
+label: Раздел
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      infocentr: infocentr
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

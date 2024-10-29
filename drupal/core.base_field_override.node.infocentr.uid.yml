@@ -1,0 +1,20 @@
+uuid: c2debec0-ee91-4867-a3e5-8f7153e2f8c7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.uid
+field_name: uid
+entity_type: node
+bundle: infocentr
+label: Автор
+description: 'Имя пользователя автора содержимого.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

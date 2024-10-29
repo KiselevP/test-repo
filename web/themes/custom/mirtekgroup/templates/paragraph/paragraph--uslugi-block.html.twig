@@ -1,0 +1,16 @@
+{% block paragraph %}
+    {% block content %}
+        <div class="paragraph paragraph--uslugi-block wrapper">
+            {% if content %}
+                {% if content.field_title|render|trim|length > 0  %}
+                    <h2 class="h2">{{ content.field_title|without('#theme')|typography }}</h2>
+                {% endif %}
+                <div class="content">
+                {{ drupal_view('uslugi', 'block_1') }}
+                </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endblock paragraph %}
+
+

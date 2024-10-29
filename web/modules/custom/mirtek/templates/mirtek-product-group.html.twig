@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present a mirtek product entity.
+ *
+ * This template is used when viewing a canonical mirtek product page,
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.label'.
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_mirtek_product_group()
+ */
+#}
+{%
+  set classes = [
+  'node',
+  'product-teaser'
+]
+%}
+
+
+<article{{ attributes.addClass(classes) }} >
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div>
+    <a href="{{ first_url_product }}"></a>
+    <div class="box-product">
+      <div class="product-item-1">
+        {# Вариации продуктов -> искать в mirtek.module #}
+        {{ content.mirtek_product }}
+        {% if content.title is not empty %}
+          <h2 class="product-title">{{- content.title|without('#theme') -}}</h2>
+        {% endif %}
+        <div class="product-tags"> {{- content.field_tags|without('#theme') -}}</div>
+        {% if content.field_short_feature is not empty %}
+          <div class="product-short-feature">{{- content.field_short_feature|without('#theme') -}}</div>
+        {% endif %}
+      </div>
+      {% if content.field_image['#items'] is not empty and content.field_image['#items'].entity.uri.value is not empty %}
+        <div class="product-item-2">
+          <div class="product-image">{{- content.field_image|without('#theme') -}}</div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+
+</article>

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Mont';
+    src: local('✽'),
+    url('/themes/custom/mirtekgroup/fonts/Mont-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: local('✽'),
+    url('/themes/custom/mirtekgroup/fonts/Mont-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: regular;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: local('✽'),
+    url('/themes/custom/mirtekgroup/fonts/Mont-SemiBold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+#root,
+body{
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    font-family: "Mont", regular;
+    font-weight: 400;
+}
+
+.h1_offer,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+    display: inline-block;
+    font-family: "Mont", bold;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    color: var(--text_black, #1D1D1D);
+}
+
+
+.h1_offer{font-size: 39px;}
+
+.h1 {font-size: 29px;}
+
+.h2 {font-size: 23px;}
+
+.h3 {font-size: 19px;}
+
+.h4 {font-size: 16px;}
+
+.h5 {font-size: 14px;}
+
+.h6 {font-size: 12px;}

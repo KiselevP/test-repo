@@ -1,0 +1,61 @@
+uuid: 607d0861-4360-493f-8405-52f4cded05ce
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.big_image_with_headline_text.field_button
+    - field.field.paragraph.big_image_with_headline_text.field_description
+    - field.field.paragraph.big_image_with_headline_text.field_headline_div
+    - field.field.paragraph.big_image_with_headline_text.field_image_position
+    - field.field.paragraph.big_image_with_headline_text.field_img
+    - paragraphs.paragraphs_type.big_image_with_headline_text
+  module:
+    - heading
+    - image
+    - link
+    - text
+id: paragraph.big_image_with_headline_text.default
+targetEntityType: paragraph
+bundle: big_image_with_headline_text
+mode: default
+content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_headline_div:
+    type: heading
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_img:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_image_position: true
+  search_api_excerpt: true

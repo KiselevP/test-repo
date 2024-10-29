@@ -1,0 +1,20 @@
+uuid: fd782f01-9aff-4980-815e-8ae1ff0ea6ef
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+  module:
+    - path
+id: mirtek_product.programmnoe_obespechenie.path
+field_name: path
+entity_type: mirtek_product
+bundle: programmnoe_obespechenie
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

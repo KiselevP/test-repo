@@ -1,0 +1,27 @@
+enabled: true
+local_task_label: 'Clone Product Group'
+fields:
+  langcode:
+    id: copy_values
+  label:
+    id: copy_values
+  mirtek_product:
+    id: copy_values
+  status:
+    id: copy_values
+  uid:
+    id: copy_values
+  created:
+    id: copy_values
+  changed:
+    id: copy_values
+  default_langcode:
+    id: copy_values
+  field_image:
+    id: copy_values
+  field_short_feature:
+    id: copy_values
+  field_tags:
+    id: copy_values
+  field_tip_produkcii:
+    id: copy_values

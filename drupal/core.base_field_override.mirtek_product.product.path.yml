@@ -1,0 +1,20 @@
+uuid: a689f302-4d18-426e-93c6-4b7cbb3c57fb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - mirtek.mirtek_product_type.product
+  module:
+    - path
+id: mirtek_product.product.path
+field_name: path
+entity_type: mirtek_product
+bundle: product
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

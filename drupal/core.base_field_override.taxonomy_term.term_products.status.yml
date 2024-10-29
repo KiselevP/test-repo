@@ -1,0 +1,22 @@
+uuid: 81165335-270c-4bd6-9abe-d0871e98af37
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.term_products
+id: taxonomy_term.term_products.status
+field_name: status
+entity_type: taxonomy_term
+bundle: term_products
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

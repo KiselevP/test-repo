@@ -1,0 +1,33 @@
+uuid: 12110528-f8c9-48ee-a092-c39f8146f5c0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.row
+    - field.field.node.news.body
+    - field.field.node.news.field_images
+    - field.field.node.news.field_tags_news
+    - node.type.news
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.row
+targetEntityType: node
+bundle: news
+mode: row
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_images: true
+  field_tags_news: true
+  langcode: true
+  search_api_excerpt: true

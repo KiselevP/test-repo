@@ -1,0 +1,18 @@
+uuid: eae17c99-76cd-4495-b925-11090ce82b6f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tehnologicheskoe_partnyorstvo
+id: node.tehnologicheskoe_partnyorstvo.created
+field_name: created
+entity_type: node
+bundle: tehnologicheskoe_partnyorstvo
+label: 'Создан в'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

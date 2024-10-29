@@ -1,0 +1,25 @@
+uuid: cdc68ed3-9625-4480-9c6e-ea8f94ba36e2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.row_novosti.field_btn
+    - paragraphs.paragraphs_type.row_novosti
+  module:
+    - link
+id: paragraph.row_novosti.default
+targetEntityType: paragraph
+bundle: row_novosti
+mode: default
+content:
+  field_btn:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: Подробнее
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,11 @@
+uuid: 59d22b07-3360-4760-a0c3-6ceff02e1de0
+langcode: ru
+status: true
+dependencies:
+  module:
+    - mirtek
+id: mirtek_product.teaser
+label: Teaser
+description: ''
+targetEntityType: mirtek_product
+cache: true

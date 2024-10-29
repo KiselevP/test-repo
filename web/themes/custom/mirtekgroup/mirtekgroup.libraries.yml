@@ -1,0 +1,46 @@
+# Main theme library.
+global:
+  js:
+    js/mirtekgroup.js: {}
+  css:
+    base:
+      css/base/elements.css: {}
+    component:
+      css/components/block.css: {}
+      css/components/breadcrumb.css: {}
+      css/components/field.css: {}
+      css/components/form.css: {}
+      css/components/header.css: {}
+      css/components/menu.css: {}
+      css/components/messages.css: {}
+      css/components/node.css: {}
+      css/components/sidebar.css: {}
+      css/components/table.css: {}
+      css/components/tabs.css: {}
+      css/components/buttons.css: {}
+    layout:
+      css/layouts/layout.css: {}
+    theme:
+      css/theme/print.css: { media: print }
+mirtekgroup:
+  js:
+    js/mirtekgroup.js: {}
+    js/swiper.js: {}
+  css:
+    theme:
+      css/theme.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - tiny_slider/tiny_slider
+    - colorbox/colorbox
+swiper:
+  version: 1.x
+  js:
+    /libraries/swiper/swiper-bundle.min.js: { type: external, minified: true }
+  css:
+    theme:
+      /libraries/swiper/swiper-bundle.min.css: { minified: true }
+
+

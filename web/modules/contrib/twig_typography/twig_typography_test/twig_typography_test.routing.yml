@@ -1,0 +1,6 @@
+twig_typography_test.filter:
+  path: '/twig-typography-test'
+  defaults:
+    _controller: '\Drupal\twig_typography_test\TwigTypographyTestController::testFilterRender'
+  requirements:
+    _access: 'TRUE'

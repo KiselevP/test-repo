@@ -1,0 +1,36 @@
+uuid: fddd45ac-8769-464a-b391-7d3241b70342
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.faq.field_content
+    - field.field.node.faq.field_faq_chapters
+    - node.type.faq
+  module:
+    - entity_reference_revisions
+    - user
+id: node.faq.default
+targetEntityType: node
+bundle: faq
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_faq_chapters:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true

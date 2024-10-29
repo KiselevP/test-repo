@@ -1,0 +1,18 @@
+uuid: 9ef68754-02d2-4b74-84d8-5d1b5f98d60e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tags_news
+target_entity_type_id: taxonomy_term
+target_bundle: tags_news
+default_langcode: site_default
+language_alterable: false

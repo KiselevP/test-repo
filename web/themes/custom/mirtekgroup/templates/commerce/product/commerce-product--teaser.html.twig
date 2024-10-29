@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+    set classes = [
+    'product-teaser',
+]
+%}
+
+<article{{ attributes.addClass(classes) }} >
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="box-product">
+        <div class="product-item-1">
+            <div class="product-variations">{{- product.variations|without('#theme') -}}</div>
+            {% if product.title is not empty %}
+                <h2 class="product-title">{{- product.title|without('#theme') -}}</h2>
+            {% endif %}
+            <div class="product-tags"> {{- product.field_tags|without('#theme') -}}</div>
+            {% if product.field_short_feature is not empty %}
+            <div class="product-short-feature">{{- product.field_short_feature|without('#theme') -}}</div>
+            {% endif %}
+            {% if product.body is not empty %}
+            <div class="product-body">{{- product.body|without('#theme') -}}</div>
+            {% endif %}
+        </div>
+        {% if product.field_image['#items'] is not empty and product.field_image['#items'].entity.uri.value is not empty %}
+        <div class="product-item-2">
+            <div class="product-image">{{- product.field_image|without('#theme') -}}</div>
+        </div>
+        {% endif %}
+    </div>
+</article>

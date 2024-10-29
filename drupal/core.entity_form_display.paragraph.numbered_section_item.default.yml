@@ -1,0 +1,34 @@
+uuid: e8c176d6-ead6-4639-9b01-f5dec4f8dc47
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_section_item.field_description
+    - field.field.paragraph.numbered_section_item.field_title_formatted
+    - paragraphs.paragraphs_type.numbered_section_item
+  module:
+    - text
+id: paragraph.numbered_section_item.default
+targetEntityType: paragraph
+bundle: numbered_section_item
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title_formatted:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

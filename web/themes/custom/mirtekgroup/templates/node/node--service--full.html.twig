@@ -1,0 +1,20 @@
+{%
+  set classes = [
+  'node',
+  'service-full',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+    <div class="service-title h1">{{ node.label|typography }}</div>
+    <div class="container">
+        <div class="content">
+            {% if content %}
+                {{ content }}
+            {% endif %}
+        </div>
+        <div class="anchor-links-wrappper">
+         <!-- Динамическое меню -->
+        </div>
+    </div>
+</article>

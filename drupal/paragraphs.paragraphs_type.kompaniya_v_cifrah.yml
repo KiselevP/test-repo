@@ -1,0 +1,10 @@
+uuid: 46546060-528a-4d63-a8c1-39fbb546e038
+langcode: ru
+status: true
+dependencies: {  }
+id: kompaniya_v_cifrah
+label: 'Компания в цифрах'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

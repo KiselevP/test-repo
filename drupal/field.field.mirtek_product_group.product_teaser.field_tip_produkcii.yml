@@ -1,0 +1,29 @@
+uuid: cb770f18-c0fe-4aa7-a59d-d159db1a7b49
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product_group.field_tip_produkcii
+    - mirtek.mirtek_product_group_type.product_teaser
+    - taxonomy.vocabulary.term_products
+id: mirtek_product_group.product_teaser.field_tip_produkcii
+field_name: field_tip_produkcii
+entity_type: mirtek_product_group
+bundle: product_teaser
+label: 'Размещение в разделе'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      term_products: term_products
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: e7d92bbf-394f-4c75-9135-c88b3c26e159
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - paragraphs.paragraphs_type.video_with_title_and_text
+  module:
+    - video_embed_field
+id: paragraph.video_with_title_and_text.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: video_with_title_and_text
+label: Видео
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    rutube: rutube
+    vk: vk
+    youtube_playlist: '0'
+    youtube: '0'
+    vimeo: '0'
+field_type: video_embed_field

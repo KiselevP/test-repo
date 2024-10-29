@@ -1,0 +1,18 @@
+uuid: 44cbee3d-3694-46c9-8fc4-bdc52b7af6e9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.proizvodstvo_item
+id: node.proizvodstvo_item.created
+field_name: created
+entity_type: node
+bundle: proizvodstvo_item
+label: 'Создан в'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

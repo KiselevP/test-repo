@@ -1,0 +1,22 @@
+uuid: 63f842f4-0057-4c95-a50a-6114b0e8c732
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_news
+id: taxonomy_term.tags_news.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tags_news
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

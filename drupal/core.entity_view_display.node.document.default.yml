@@ -1,0 +1,33 @@
+uuid: ba7d8afb-7aa8-4cea-9806-b45cdddf5ffd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.document.body
+    - field.field.node.document.field_depiction
+    - field.field.node.document.field_doc_file
+    - field.field.node.document.field_document_type
+    - field.field.node.document.field_product_country
+    - field.field.node.document.field_product_type
+    - field.field.node.document.field_produkt
+    - field.field.node.document.field_url
+    - node.type.document
+  module:
+    - user
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content: {  }
+hidden:
+  body: true
+  field_depiction: true
+  field_doc_file: true
+  field_document_type: true
+  field_product_country: true
+  field_product_type: true
+  field_produkt: true
+  field_url: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

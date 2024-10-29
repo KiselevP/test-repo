@@ -1,0 +1,95 @@
+uuid: e7ac4942-5d43-4390-a92f-e181fcbd02f5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.mirtek_product.teaser
+    - field.field.mirtek_product.product.field_body
+    - field.field.mirtek_product.product.field_country
+    - field.field.mirtek_product.product.field_dimensions
+    - field.field.mirtek_product.product.field_extra
+    - field.field.mirtek_product.product.field_feature
+    - field.field.mirtek_product.product.field_group_products
+    - field.field.mirtek_product.product.field_image
+    - field.field.mirtek_product.product.field_images
+    - field.field.mirtek_product.product.field_performances
+    - field.field.mirtek_product.product.field_related_products
+    - field.field.mirtek_product.product.field_specs
+    - field.field.mirtek_product.product.field_sybols
+    - mirtek.mirtek_product_type.product
+  module:
+    - image
+    - user
+id: mirtek_product.product.teaser
+targetEntityType: mirtek_product
+bundle: product
+mode: teaser
+content:
+  created:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  status:
+    type: boolean
+    label: above
+    settings:
+      format: enabled-disabled
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  uid:
+    type: author
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+hidden:
+  field_body: true
+  field_country: true
+  field_dimensions: true
+  field_extra: true
+  field_feature: true
+  field_group_products: true
+  field_images: true
+  field_performances: true
+  field_related_products: true
+  field_specs: true
+  field_sybols: true
+  langcode: true

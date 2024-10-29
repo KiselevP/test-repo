@@ -1,0 +1,18 @@
+<div id="root">
+    <header class="header">
+        {{ page.header }}
+        {{ page.header_navigation }}
+    </header>
+    <main class="main wrapper">
+            {% if page.breadcrumb %}
+                <nav class="breadcrumb">
+                    {{ page.breadcrumb }}
+                </nav>
+            {% endif %}
+            <h1 class="h1">Войти</h1>
+            {{ page.content }}
+    </main>
+    <footer class="footer">
+        {{ page.footer }}
+    </footer>
+</div>

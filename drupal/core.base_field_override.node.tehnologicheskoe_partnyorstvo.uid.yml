@@ -1,0 +1,20 @@
+uuid: 98ac31b7-c0fa-415c-899c-64b477a00c1b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tehnologicheskoe_partnyorstvo
+id: node.tehnologicheskoe_partnyorstvo.uid
+field_name: uid
+entity_type: node
+bundle: tehnologicheskoe_partnyorstvo
+label: Автор
+description: 'Имя пользователя автора содержимого.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

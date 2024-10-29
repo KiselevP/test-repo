@@ -1,0 +1,22 @@
+uuid: 953f1bfb-0d54-4dab-b91c-f2927fc7492e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: novosti
+label: Новости
+type: 'canonical_entities:node'
+pattern: '/kompaniya/novosti/[node:title]'
+selection_criteria:
+  e0d391d8-bb33-484d-a0bb-38c966f6d3ff:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e0d391d8-bb33-484d-a0bb-38c966f6d3ff
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+selection_logic: and
+weight: -5
+relationships: {  }

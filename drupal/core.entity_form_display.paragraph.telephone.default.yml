@@ -1,0 +1,37 @@
+uuid: 2555ee1b-5a9b-4880-9322-3c948f9cdde1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.telephone.field_headline_div
+    - field.field.paragraph.telephone.field_tel
+    - paragraphs.paragraphs_type.telephone
+  module:
+    - heading
+    - telephone
+id: paragraph.telephone.default
+targetEntityType: paragraph
+bundle: telephone
+mode: default
+content:
+  field_headline_div:
+    type: heading
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tel:
+    type: telephone_default
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

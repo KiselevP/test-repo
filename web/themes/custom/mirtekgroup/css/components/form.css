@@ -1,0 +1,41 @@
+#user-login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+#user-login-form .form-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+#user-login-form .form-item label{
+    font-size: 14px;
+}
+
+#user-login-form .form-item input{
+    display: flex;
+    padding: 10px 10px 8px 10px;
+    align-items: flex-end;
+    gap: 10px;
+    align-self: stretch;
+}
+
+
+#user-login-form #edit-submit{
+    color: var(--white, #FFF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    padding: 8px 44px 6px 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    border: 2px solid var(--main, #0E8BC2);
+    background: var(--main, #0E8BC2);
+}

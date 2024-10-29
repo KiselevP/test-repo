@@ -1,0 +1,8 @@
+uuid: 3a8c79f3-5326-4a0e-806e-bd5988156e92
+langcode: ru
+status: true
+dependencies: {  }
+id: created_date
+label: 'Created date'
+locked: false
+pattern: 'j  F  Y'

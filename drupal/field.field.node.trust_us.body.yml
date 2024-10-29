@@ -1,0 +1,24 @@
+uuid: 758ff181-3bc8-4af1-85ea-16570d23147c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.trust_us
+  module:
+    - text
+id: node.trust_us.body
+field_name: body
+entity_type: node
+bundle: trust_us
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

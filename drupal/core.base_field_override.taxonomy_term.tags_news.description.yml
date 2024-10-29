@@ -1,0 +1,21 @@
+uuid: baac2658-4d40-468c-80b3-4a03c0e215d6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_news
+  module:
+    - text
+id: taxonomy_term.tags_news.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tags_news
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

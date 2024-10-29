@@ -1,0 +1,15 @@
+uuid: 6f78d65d-a7e9-4952-98cc-89402587ba63
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: localhost
+name: localhost
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 2
+  matching: partial
+  phrase: disabled

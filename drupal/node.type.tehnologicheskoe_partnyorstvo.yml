@@ -1,0 +1,18 @@
+uuid: 470e0806-a8f7-41d6-8007-917e4d8a0790
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Технологическое партнёрство'
+type: tehnologicheskoe_partnyorstvo
+description: 'Раздел технологическое партнёрство'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

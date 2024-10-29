@@ -1,0 +1,19 @@
+uuid: e296f550-8c18-476a-a5ff-73acc77d9bdf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - paragraphs.paragraphs_type.sybols_item
+id: paragraph.sybols_item.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: sybols_item
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,16 @@
+{% block paragraph %}
+    {% block content %}
+        <div class="paragraph paragraph--numbered-section wrapper">
+            {% if content %}
+                {% if content.field_title_formatted|render|trim|length > 0  %}
+                    <h2 class="h2">{{ content.field_title_formatted|without('#theme')|typography }}</h2>
+                {% endif %}
+            <div class="content">
+                {{ content.field_numbered_section_item|without('#theme') }}
+            </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endblock paragraph %}
+
+

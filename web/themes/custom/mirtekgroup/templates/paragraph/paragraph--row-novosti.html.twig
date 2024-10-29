@@ -1,0 +1,25 @@
+{% block paragraph %}
+    {% block content %}
+        <div class="paragraph paragraph--row-novosti">
+            {% if content %}
+                {# Извлекаем контент ссылки и сохраняем его в переменную. #}
+                {% set link_content = content.field_btn|without('#theme') %}
+                {% if link_content is iterable %}
+                    {% set link_content = link_content|render %}
+                {% endif %}
+                {# Используем replace для добавления <span class="icon"></span> внутрь ссылки. #}
+                {% set modified_link_content = link_content|replace({'</a>': '<span class="icon"></span></a>'}) %}
+                <div class="content wrapper">
+                    {{ drupal_view('row_novosti', 'block_1') }}
+                    <div class="views-row">
+                        <div class="section-buttons">
+                            {{ modified_link_content|typography|raw }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endblock paragraph %}
+
+

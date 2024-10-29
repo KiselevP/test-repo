@@ -1,0 +1,199 @@
+uuid: 91bfdf1b-c151-4edd-a60b-4cccc89e3448
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_extra
+    - field.storage.mirtek_product.field_performances
+    - field.storage.paragraph.field_sybols_items
+    - field.storage.mirtek_product.field_feature
+    - field.storage.mirtek_product.field_body
+    - field.storage.mirtek_product.field_specs
+    - field.storage.node.body
+    - field.storage.node.field_content
+    - field.storage.node.field_depiction
+    - field.storage.node.field_description
+    - field.storage.node.field_section
+    - search_api.server.localhost
+  module:
+    - paragraphs
+    - mirtek
+    - node
+    - taxonomy
+    - search_api
+id: content
+name: content
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_body:
+    label: Описание
+    datasource_id: 'entity:mirtek_product'
+    property_path: field_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.mirtek_product.field_body
+  field_content:
+    label: Контент
+    datasource_id: 'entity:node'
+    property_path: field_content
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_content
+  field_depiction:
+    label: Описание
+    datasource_id: 'entity:node'
+    property_path: field_depiction
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_depiction
+  field_description:
+    label: 'Описание (превью)'
+    datasource_id: 'entity:node'
+    property_path: field_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_description
+  field_extra:
+    label: 'Дополнительная информация'
+    datasource_id: 'entity:mirtek_product'
+    property_path: field_extra
+    type: text
+    dependencies:
+      config:
+        - field.storage.mirtek_product.field_extra
+  field_feature:
+    label: 'Ключевые особенности'
+    datasource_id: 'entity:mirtek_product'
+    property_path: field_feature
+    type: text
+    dependencies:
+      config:
+        - field.storage.mirtek_product.field_feature
+  field_specs:
+    label: Характеристики
+    datasource_id: 'entity:mirtek_product'
+    property_path: field_specs
+    type: text
+    dependencies:
+      config:
+        - field.storage.mirtek_product.field_specs
+  field_sybols_items:
+    label: 'Исполнения » Параграф » Sybols items'
+    datasource_id: 'entity:mirtek_product'
+    property_path: 'field_performances:entity:field_sybols_items'
+    type: text
+    dependencies:
+      config:
+        - field.storage.mirtek_product.field_performances
+        - field.storage.paragraph.field_sybols_items
+      module:
+        - paragraphs
+  label:
+    label: Метка
+    datasource_id: 'entity:mirtek_product'
+    property_path: label
+    type: text
+    dependencies:
+      module:
+        - mirtek
+  tid:
+    label: 'Раздел » Термин таксономии » ID термина'
+    datasource_id: 'entity:node'
+    property_path: 'field_section:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_section
+      module:
+        - taxonomy
+  title:
+    label: Заголовок
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:mirtek_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - document
+        - faq
+        - infocentr
+        - news
+        - service
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_status: {  }
+  entity_type: {  }
+  ignorecase:
+    weights:
+      preprocess_index: -20
+      preprocess_query: -50
+    all_fields: true
+    fields:
+      - body
+      - field_body
+      - field_content
+      - field_depiction
+      - field_description
+      - field_extra
+      - field_feature
+      - field_specs
+      - field_sybols_items
+      - label
+      - title
+  language_with_fallback: {  }
+  mirtek_processor:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: 0
+    fields:
+      - body
+      - field_body
+      - field_content
+      - field_depiction
+      - field_description
+      - field_extra
+      - field_feature
+      - field_specs
+      - field_sybols_items
+      - label
+      - title
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: localhost

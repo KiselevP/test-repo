@@ -1,0 +1,23 @@
+uuid: 0c70b42f-8f7d-4b8e-b7ae-3fb17aeb41f6
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button
+    - paragraphs.paragraphs_type.big_image_with_headline_text
+  module:
+    - link
+id: paragraph.big_image_with_headline_text.field_button
+field_name: field_button
+entity_type: paragraph
+bundle: big_image_with_headline_text
+label: Кнопки
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

@@ -1,0 +1,10 @@
+uuid: ac8aa6f5-8c09-42f3-a6b5-2a122611c3a6
+langcode: ru
+status: true
+dependencies: {  }
+id: produkciya_block
+label: Продукция
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

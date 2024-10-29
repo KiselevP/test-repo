@@ -1,0 +1,11 @@
+entity.mirtek_product_type.collection:
+  title: 'MIRTEK Типы продуктов'
+  description: 'Manage and CRUD actions on Mirtek product type.'
+  parent: system.admin_structure
+  route_name: entity.mirtek_product_type.collection
+
+entity.mirtek_product_group_type.collection:
+  title: 'MIRTEK Типы групп продуктов'
+  description: 'Manage and CRUD actions on Mirtek product group type.'
+  parent: system.admin_structure
+  route_name: entity.mirtek_product_group_type.collection

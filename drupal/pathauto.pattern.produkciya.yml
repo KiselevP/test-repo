@@ -1,0 +1,22 @@
+uuid: 97aa577d-b8ae-4320-bcf9-1f1f0e780ca9
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: produkciya
+label: Продукция
+type: 'canonical_entities:taxonomy_term'
+pattern: '/produkciya/[term:name]'
+selection_criteria:
+  bbaf843f-3c76-4566-a333-201dbb93f780:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: bbaf843f-3c76-4566-a333-201dbb93f780
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      term_products: term_products
+selection_logic: and
+weight: -5
+relationships: {  }

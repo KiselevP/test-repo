@@ -1,0 +1,58 @@
+uuid: 0649ac58-b336-46ba-83ec-da7e6bfad15c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_and_text
+    - paragraphs.paragraphs_type.headline_text
+    - paragraphs.paragraphs_type.image_with_title_and_text
+  module:
+    - entity_reference_revisions
+id: paragraph.image_with_title_and_text.field_title_and_text
+field_name: field_title_and_text
+entity_type: paragraph
+bundle: image_with_title_and_text
+label: 'Заголовок & описание'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      headline_text: headline_text
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_headline_text:
+        weight: 12
+        enabled: false
+      headline_text:
+        weight: 13
+        enabled: true
+      image_with_title_and_text:
+        weight: 11
+        enabled: false
+      numbered_section:
+        weight: 14
+        enabled: false
+      numbered_section_item:
+        weight: 15
+        enabled: false
+      otzyv:
+        weight: 16
+        enabled: false
+      slider:
+        weight: 17
+        enabled: false
+      sybols:
+        weight: 18
+        enabled: false
+      sybols_item:
+        weight: 19
+        enabled: false
+      video_with_title_and_text:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

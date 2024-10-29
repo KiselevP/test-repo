@@ -1,0 +1,20 @@
+uuid: b2681c32-3adc-4942-9a7f-1abf8d4da54b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.faq
+  module:
+    - path
+id: node.faq.path
+field_name: path
+entity_type: node
+bundle: faq
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

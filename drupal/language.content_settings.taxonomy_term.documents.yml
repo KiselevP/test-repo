@@ -1,0 +1,18 @@
+uuid: 04314bc8-85b2-4f49-aa2f-ac2192cc0197
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.documents
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.documents
+target_entity_type_id: taxonomy_term
+target_bundle: documents
+default_langcode: site_default
+language_alterable: false
