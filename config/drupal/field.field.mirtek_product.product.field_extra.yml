@@ -1,0 +1,22 @@
+uuid: b05f4dd3-5730-4e59-af0b-76574f440e90
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_extra
+    - mirtek.mirtek_product_type.product
+  module:
+    - text
+id: mirtek_product.product.field_extra
+field_name: field_extra
+entity_type: mirtek_product
+bundle: product
+label: 'Дополнительная информация'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

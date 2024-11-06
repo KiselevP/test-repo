@@ -1,0 +1,130 @@
+uuid: 43afa29f-2173-4d09-9fae-89689c614b4e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.mirtek_product.programmnoe_obespechenie.field_body
+    - field.field.mirtek_product.programmnoe_obespechenie.field_country
+    - field.field.mirtek_product.programmnoe_obespechenie.field_feature
+    - field.field.mirtek_product.programmnoe_obespechenie.field_group_products
+    - field.field.mirtek_product.programmnoe_obespechenie.field_image
+    - field.field.mirtek_product.programmnoe_obespechenie.field_images
+    - field.field.mirtek_product.programmnoe_obespechenie.field_related_products
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+  module:
+    - image
+    - text
+    - user
+id: mirtek_product.programmnoe_obespechenie.default
+targetEntityType: mirtek_product
+bundle: programmnoe_obespechenie
+mode: default
+content:
+  created:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_feature:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_group_products:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_related_products:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  status:
+    type: boolean
+    label: above
+    settings:
+      format: enabled-disabled
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  uid:
+    type: author
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

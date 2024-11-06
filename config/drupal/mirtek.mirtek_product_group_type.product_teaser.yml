@@ -1,0 +1,6 @@
+uuid: 66d7e6e9-ce47-4c05-9510-962147ffce42
+langcode: ru
+status: true
+dependencies: {  }
+id: product_teaser
+label: Продукт

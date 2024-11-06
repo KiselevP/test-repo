@@ -1,0 +1,22 @@
+uuid: f4332107-8ab6-41bf-8b41-9ba9b2c5d6ce
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.produkciya_block.field_headline_div
+    - paragraphs.paragraphs_type.produkciya_block
+  module:
+    - heading
+id: paragraph.produkciya_block.default
+targetEntityType: paragraph
+bundle: produkciya_block
+mode: default
+content:
+  field_headline_div:
+    type: heading
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

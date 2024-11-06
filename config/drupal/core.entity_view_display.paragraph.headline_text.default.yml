@@ -1,0 +1,30 @@
+uuid: 909e4ff4-e2e9-4c59-8496-e335d570c1da
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.headline_text.field_description
+    - field.field.paragraph.headline_text.field_title_formatted
+    - paragraphs.paragraphs_type.headline_text
+  module:
+    - text
+id: paragraph.headline_text.default
+targetEntityType: paragraph
+bundle: headline_text
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_formatted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

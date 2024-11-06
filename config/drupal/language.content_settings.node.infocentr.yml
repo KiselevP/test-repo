@@ -1,0 +1,18 @@
+uuid: fb03d87c-42fb-4727-8fe6-a5ca68a3bf10
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.infocentr
+target_entity_type_id: node
+target_bundle: infocentr
+default_langcode: site_default
+language_alterable: false

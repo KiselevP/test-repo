@@ -1,0 +1,10 @@
+uuid: c27e265b-fead-4e95-9de5-ab11dff5861a
+langcode: ru
+status: true
+dependencies: {  }
+id: kompaniya_v_cifrah_item
+label: 'Компания в цифрах элемент'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

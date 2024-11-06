@@ -1,0 +1,23 @@
+uuid: 5ff96be4-87ec-4dde-abb6-1f03fafbc3e9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.uslugi_block.field_title
+    - paragraphs.paragraphs_type.uslugi_block
+id: paragraph.uslugi_block.default
+targetEntityType: paragraph
+bundle: uslugi_block
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

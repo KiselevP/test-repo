@@ -1,0 +1,25 @@
+mirtek.mirtek_product_type.*:
+  type: config_entity
+  label: 'Mirtek product type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+
+mirtek.mirtek_product_group_type.*:
+  type: config_entity
+  label: 'Mirtek product group type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

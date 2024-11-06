@@ -1,0 +1,11 @@
+mirtek.clone:
+  path: '/mirtek/{mirtek_product_group}/clone'
+  defaults:
+    _controller: '\Drupal\mirtek\Controller\MirtekCloneController::cloneEntity'
+    _title: 'Clone Mirtek Product Group'
+  requirements:
+    _permission: 'clone mirtek product group'
+  options:
+    parameters:
+      mirtek_product_group:
+        type: entity:mirtek_product_group

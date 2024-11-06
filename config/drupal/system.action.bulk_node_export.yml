@@ -1,0 +1,13 @@
+uuid: e2bc58a1-82cc-4439-a701-20bca521160d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node_export
+_core:
+  default_config_hash: QPjrX5KRaYALlSNElCidC2obB5gJdES1YZwvWnrM5zU
+id: bulk_node_export
+label: 'Node Export'
+type: node
+plugin: bulk_node_export
+configuration: {  }

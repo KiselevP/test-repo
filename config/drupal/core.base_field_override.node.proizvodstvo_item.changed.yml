@@ -1,0 +1,18 @@
+uuid: 442f9581-3f35-4dd2-a55d-d3cc6140ec79
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.proizvodstvo_item
+id: node.proizvodstvo_item.changed
+field_name: changed
+entity_type: node
+bundle: proizvodstvo_item
+label: Изменение
+description: 'Время последнего редактирования материала.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

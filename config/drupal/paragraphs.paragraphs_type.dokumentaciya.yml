@@ -1,0 +1,10 @@
+uuid: bf30182d-a6c8-4cf9-b974-f6608c82a32f
+langcode: ru
+status: true
+dependencies: {  }
+id: dokumentaciya
+label: Документация
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

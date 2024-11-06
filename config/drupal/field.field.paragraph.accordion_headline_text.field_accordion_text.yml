@@ -1,0 +1,22 @@
+uuid: 3e4efc36-c773-45d9-9d26-86a646740052
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_text
+    - paragraphs.paragraphs_type.accordion_headline_text
+  module:
+    - text
+id: paragraph.accordion_headline_text.field_accordion_text
+field_name: field_accordion_text
+entity_type: paragraph
+bundle: accordion_headline_text
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

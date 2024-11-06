@@ -1,0 +1,22 @@
+uuid: eb04b661-af7f-48d4-ae49-157ae5e110fe
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tovary
+id: taxonomy_term.tovary.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tovary
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

@@ -1,0 +1,43 @@
+uuid: a489b75a-93d9-45f5-95ee-ccc7e6d29ae0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reviews
+    - node.type.trust_us
+    - paragraphs.paragraphs_type.otzyv
+  module:
+    - entity_reference_revisions
+id: node.trust_us.field_reviews
+field_name: field_reviews
+entity_type: node
+bundle: trust_us
+label: Отзывы
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      otzyv: otzyv
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_headline_text:
+        weight: 7
+        enabled: false
+      headline_text:
+        weight: 8
+        enabled: false
+      otzyv:
+        weight: 6
+        enabled: true
+      sybols:
+        weight: 9
+        enabled: false
+      sybols_item:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

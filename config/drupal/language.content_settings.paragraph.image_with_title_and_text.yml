@@ -1,0 +1,18 @@
+uuid: 44811b8a-d07c-4f8c-9e90-933865c8166a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.image_with_title_and_text
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.image_with_title_and_text
+target_entity_type_id: paragraph
+target_bundle: image_with_title_and_text
+default_langcode: site_default
+language_alterable: false

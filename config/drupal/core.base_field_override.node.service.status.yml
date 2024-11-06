@@ -1,0 +1,22 @@
+uuid: 4b021a11-6a64-4383-8b75-3d95ec4a2067
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.service
+id: node.service.status
+field_name: status
+entity_type: node
+bundle: service
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

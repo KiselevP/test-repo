@@ -1,0 +1,15 @@
+{{ attach_library('mirtekgroup/swiper') }}
+{% block paragraph %}
+    {% block content %}
+        <div class="paragraph paragraph--nam-doveryayut-block">
+            {% if content %}
+                <div class="wrapper">{{ content.field_headline_div|without('#theme')|typography }}</div>
+                <div class="content">
+                {{ drupal_view('row_reviews', 'block_1') }}
+                </div>
+            {% endif %}
+        </div>
+    {% endblock %}
+{% endblock paragraph %}
+
+

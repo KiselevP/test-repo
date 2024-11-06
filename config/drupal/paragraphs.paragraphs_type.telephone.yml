@@ -1,0 +1,10 @@
+uuid: a3eee625-2016-4418-b9fb-196399ef1068
+langcode: ru
+status: true
+dependencies: {  }
+id: telephone
+label: Телефоны
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

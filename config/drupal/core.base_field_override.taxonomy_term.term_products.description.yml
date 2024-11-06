@@ -1,0 +1,21 @@
+uuid: d7d40ca6-e968-41f6-9177-cba15b0d2d2c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.term_products
+  module:
+    - text
+id: taxonomy_term.term_products.description
+field_name: description
+entity_type: taxonomy_term
+bundle: term_products
+label: Описание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: f1296112-cf30-4bda-96a7-8179e71e2273
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.menu_link
+field_name: menu_link
+entity_type: node
+bundle: infocentr
+label: 'Ссылка меню'
+description: 'Вычисленная ссылка на меню для материала (доступна только во время сохранения материала).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

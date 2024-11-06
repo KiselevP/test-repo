@@ -1,0 +1,10 @@
+uuid: 4952b7de-3d09-492d-91bd-175533297fe7
+langcode: ru
+status: true
+dependencies: {  }
+id: big_image_with_headline_text
+label: 'Большая картинка с заголовком, текстом и ссылкой'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

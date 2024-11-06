@@ -1,0 +1,22 @@
+uuid: e2ced2e9-0760-4378-b4d3-e1af03231434
+langcode: ru
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - mirtekgroup
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: mirtekgroup_messages
+theme: mirtekgroup
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Системные сообщения'
+  label_display: '0'
+  provider: system
+visibility: {  }

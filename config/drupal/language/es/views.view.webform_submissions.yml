@@ -1,0 +1,155 @@
+label: 'Envíos de formulario web'
+display:
+  default:
+    display_title: Máster
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Применить
+          reset_button_label: Сбросить
+          exposed_sorts_label: 'Сортировать по'
+          sort_asc_label: 'По возрастанию'
+          sort_desc_label: 'По убыванию'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Первая'
+            last: 'Последняя »'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      fields:
+        sid:
+          label: Nº
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        remote_addr:
+          label: 'Direccion(es) IP'
+          separator: ', '
+        view_webform_submission:
+          label: Операции
+          text: vista
+      header:
+        result:
+          content: 'Mostrando @start - @end de @total'
+      arguments:
+        in_draft:
+          exception:
+            title: Все
+      title: 'Envíos de formulario web'
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Действие
+        sid:
+          label: Nº
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        sticky:
+          label: 'Fijo en cabeza de las listas'
+          separator: ', '
+        locked:
+          label: Bloqueado
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        completed:
+          label: Completado
+          separator: ', '
+        remote_addr:
+          label: 'Direccion(es) IP'
+          separator: ', '
+        operations:
+          label: Операции
+      filters:
+        sticky:
+          expose:
+            label: 'Fijo en cabeza de las listas'
+        locked:
+          expose:
+            label: Bloqueado
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Действие
+        sid:
+          label: Nº
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        sticky:
+          label: 'Fijo en cabeza de las listas'
+          separator: ', '
+        locked:
+          label: Bloqueado
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        completed:
+          label: Completado
+          separator: ', '
+        remote_addr:
+          label: 'Direccion(es) IP'
+          separator: ', '
+        view_webform_submission:
+          label: Операции
+          text: vista
+        edit_webform_submission:
+          label: Операции
+          text: editar
+      filters:
+        sticky:
+          expose:
+            label: 'Fijo en cabeza de las listas'
+        locked:
+          expose:
+            label: Bloqueado
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          label: Nº
+          separator: ', '
+        in_draft:
+          label: Borrador
+          separator: ', '
+        sticky:
+          label: 'Fijo en cabeza de las listas'
+          separator: ', '
+        locked:
+          label: Bloqueado
+          separator: ', '
+        created:
+          label: Creado
+          separator: ', '
+        completed:
+          label: Completado
+          separator: ', '
+        remote_addr:
+          label: 'Direccion(es) IP'
+          separator: ', '
+        view_webform_submission:
+          label: Операции
+          text: vista
+      filters:
+        sticky:
+          expose:
+            label: 'Fijo en cabeza de las listas'
+        locked:
+          expose:
+            label: Bloqueado

@@ -1,0 +1,22 @@
+uuid: 8f58353c-8a72-46a9-938f-80a6412095f9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah_item
+id: paragraph.kompaniya_v_cifrah_item.status
+field_name: status
+entity_type: paragraph
+bundle: kompaniya_v_cifrah_item
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

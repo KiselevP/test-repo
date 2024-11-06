@@ -1,0 +1,18 @@
+uuid: 905d7cf3-3885-4cd2-b49e-9010382f5e5b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.tehnologicheskoe_partnyorstvo
+id: node.tehnologicheskoe_partnyorstvo.title
+field_name: title
+entity_type: node
+bundle: tehnologicheskoe_partnyorstvo
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

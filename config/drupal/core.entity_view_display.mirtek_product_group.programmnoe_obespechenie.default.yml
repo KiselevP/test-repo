@@ -1,0 +1,58 @@
+uuid: 8cba4957-8956-4098-8304-0e83130b3d0b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.mirtek_product_group.programmnoe_obespechenie.field_image
+    - field.field.mirtek_product_group.programmnoe_obespechenie.field_short_feature
+    - field.field.mirtek_product_group.programmnoe_obespechenie.field_tip_produkcii
+    - mirtek.mirtek_product_group_type.programmnoe_obespechenie
+  module:
+    - image
+    - text
+id: mirtek_product_group.programmnoe_obespechenie.default
+targetEntityType: mirtek_product_group
+bundle: programmnoe_obespechenie
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_short_feature:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  mirtek_product:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: mini
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_tip_produkcii: true
+  langcode: true
+  status: true
+  uid: true

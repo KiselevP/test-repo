@@ -1,0 +1,10 @@
+uuid: 9f190b10-cfae-4a30-9904-2830020ad3c9
+langcode: ru
+status: true
+dependencies: {  }
+id: otzyv
+label: Отзыв
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

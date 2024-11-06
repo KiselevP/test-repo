@@ -1,0 +1,66 @@
+uuid: 6a5d8e2b-55d2-46d6-908a-23339526ff96
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.infocentr.body
+    - field.field.node.infocentr.field_description
+    - field.field.node.infocentr.field_doc_file
+    - field.field.node.infocentr.field_image
+    - field.field.node.infocentr.field_image_preview
+    - field.field.node.infocentr.field_section
+    - field.field.node.infocentr.field_weight
+    - image.style.infocentr_700x700
+    - node.type.infocentr
+  module:
+    - file
+    - image
+    - text
+    - user
+id: node.infocentr.default
+targetEntityType: node
+bundle: infocentr
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_doc_file:
+    type: file_url_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: infocentr_700x700
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_image_preview: true
+  field_section: true
+  field_weight: true
+  langcode: true

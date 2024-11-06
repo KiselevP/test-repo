@@ -1,0 +1,23 @@
+{%
+  set classes = [
+  'node',
+  'faq-full',
+  'wrapper',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+    <div class="title">
+        <div class="h3">{{ node.label|typography }}</div>
+        <div class="mdi mdi-chevron-right"></div>
+    </div>
+    <div class="content">
+        {% if content %}
+            {{ content.field_content }}
+        {% endif %}
+        <div>
+            <div class="share" onclick="copyShareLink({{ node.id }})"></div>
+        </div>
+    </div>
+</article>
+

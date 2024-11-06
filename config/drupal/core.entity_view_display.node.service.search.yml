@@ -1,0 +1,36 @@
+uuid: 1dcab22d-0d44-4828-8ab5-a6328903d1bf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search
+    - field.field.node.service.field_content
+    - field.field.node.service.field_image_preview
+    - node.type.service
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.service.search
+targetEntityType: node
+bundle: service
+mode: search
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image_preview: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

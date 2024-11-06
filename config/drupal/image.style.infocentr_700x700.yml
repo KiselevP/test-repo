@@ -1,0 +1,14 @@
+uuid: 19371c4e-b229-40f9-8bb6-f0f76d97d4bd
+langcode: ru
+status: true
+dependencies: {  }
+name: infocentr_700x700
+label: 'Инфоцентр (700х700)'
+effects:
+  a6b68c29-8e59-457d-baab-482240e603bc:
+    uuid: a6b68c29-8e59-457d-baab-482240e603bc
+    id: image_resize
+    weight: 1
+    data:
+      width: 700
+      height: 700

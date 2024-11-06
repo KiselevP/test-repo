@@ -1,0 +1,22 @@
+uuid: 67a980f2-bbc1-44cf-ad87-e40946997415
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regiony
+id: taxonomy_term.regiony.status
+field_name: status
+entity_type: taxonomy_term
+bundle: regiony
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

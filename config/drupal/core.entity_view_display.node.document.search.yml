@@ -1,0 +1,59 @@
+uuid: 6af15e27-2467-4ce7-b6e7-979a06d749b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search
+    - field.field.node.document.body
+    - field.field.node.document.field_depiction
+    - field.field.node.document.field_doc_file
+    - field.field.node.document.field_document_type
+    - field.field.node.document.field_product_country
+    - field.field.node.document.field_product_type
+    - field.field.node.document.field_produkt
+    - field.field.node.document.field_url
+    - node.type.document
+  module:
+    - file
+    - layout_builder
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.document.search
+targetEntityType: node
+bundle: document
+mode: search
+content:
+  field_doc_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_depiction: true
+  field_document_type: true
+  field_product_country: true
+  field_product_type: true
+  field_produkt: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: 4ff08b9f-71f3-4826-91ee-f80c5436c99e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.kompaniya_v_cifrah_item
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.kompaniya_v_cifrah_item
+target_entity_type_id: paragraph
+target_bundle: kompaniya_v_cifrah_item
+default_langcode: site_default
+language_alterable: false

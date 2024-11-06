@@ -1,0 +1,20 @@
+{%
+  set classes = [
+  'node',
+  'news-row',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}'>
+  <div class="news-item">
+      <a href="{{ url }}"></a>
+      <div class="news-date">
+          <div class="news-day">{{ formatted_day }}</div>
+          <div>
+              <div class="news-month">{{ formatted_month }}</div>
+              <div class="news-year">{{ formatted_year }}</div>
+          </div>
+      </div>
+      <div class="news-title">{{ label }}</div>
+  </div>
+</article>

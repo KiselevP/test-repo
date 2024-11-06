@@ -1,0 +1,22 @@
+uuid: b36e5cae-a460-4f20-872d-32317add2c67
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.mirtek_product.field_feature
+    - mirtek.mirtek_product_type.programmnoe_obespechenie
+  module:
+    - text
+id: mirtek_product.programmnoe_obespechenie.field_feature
+field_name: field_feature
+entity_type: mirtek_product
+bundle: programmnoe_obespechenie
+label: 'Ключевые особенности'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 8e891028-ab32-4e4b-ad43-712e2124e614
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.zagolovok_i_opisanie
+id: paragraph.zagolovok_i_opisanie.status
+field_name: status
+entity_type: paragraph
+bundle: zagolovok_i_opisanie
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

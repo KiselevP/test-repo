@@ -1,0 +1,27 @@
+uuid: 00ca5b19-4764-4950-b0a3-8294b816a651
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mirtekgroup
+_core:
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: mirtekgroup_main_menu
+theme: mirtekgroup
+region: header_navigation
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Основная навигация'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

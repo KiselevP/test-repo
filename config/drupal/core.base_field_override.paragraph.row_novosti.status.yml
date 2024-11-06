@@ -1,0 +1,22 @@
+uuid: e2373c99-93d5-41ae-8043-a4305c2d9aa4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.row_novosti
+id: paragraph.row_novosti.status
+field_name: status
+entity_type: paragraph
+bundle: row_novosti
+label: Опубликовано
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

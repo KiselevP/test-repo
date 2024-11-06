@@ -1,0 +1,304 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Mirtek module.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+use Drupal\views\ViewExecutable;
+use Drupal\views\Views;
+use Drupal\entity_clone\EntityClone\Config\ConfigEntityCloneBase;
+use Drupal\entity_clone\EntityClone\Config\ConfigEntityCloneFormBase;
+use Drupal\entity_clone\EntityClone\Content\ContentEntityCloneBase;
+use Drupal\entity_clone\EntityClone\Content\ContentEntityCloneFormBase;
+use Drupal\mirtek\Entity\MirtekProductGroup;
+use Drupal\mirtek\Entity\MirtekProduct;
+use Drupal\Core\Form\FormStateInterface;
+
+
+use Drupal\mirtek\EntityClone\Content\MirtekProductEntityClone;
+
+/**
+ * Implements hook_theme().
+ */
+function mirtek_theme() {
+  return [
+    'mirtek_product' => [
+      'render element' => 'elements',
+    ],
+    'mirtek_product_group' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for mirtek product templates.
+ *
+ * Default template: mirtek-product.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the mirtek product information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_mirtek_product(array &$variables) {
+    $variables['view_mode'] = $variables['elements']['#view_mode'];
+
+    $variables['theme_hook_suggestion'] = 'node__promoted';
+
+    $variables['mirtek_product'] = $variables['elements']['#mirtek_product'];
+
+    $variables['title'] = $variables['mirtek_product']->label();
+    $variables['id'] = $variables['mirtek_product']->id();
+
+    $url_object = $variables['mirtek_product']->toUrl();
+    $variables['url_product'] = $url_object->setAbsolute()->toString();
+
+    $variables['mirtek_product_group'] = $variables['mirtek_product']->get("field_group_products")->entity;
+
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('mirtek_product_group');
+//    $variables['content_group'] = $view_builder->view($variables['mirtek_product_group'], 'full');
+
+    foreach ($variables['mirtek_product_group']->getFields() as $field) {
+        $variables['content'][$field->getName()] = $view_builder->viewField($field, 'full');
+    }
+
+
+    foreach (Element::children($variables['elements']) as $key) {
+        $variables['content'][$key] = $variables['elements'][$key];
+    }
+
+    // Получаем представление.
+    $product = \Drupal::routeMatch()->getParameter('mirtek_product');
+
+    if ($product) {
+        $id = $product->id();
+
+        // Получаем представление для docs_block.
+        $view_docs = \Drupal\views\Views::getView('docs_in_produkt');
+        if ($view_docs) {
+            $view_docs->setDisplay('docs_block');
+            $view_docs->setArguments([$id]);
+            $view_docs->execute();
+            $variables['docs_block_has_results'] = count($view_docs->result) > 0;
+        }
+
+        // Получаем представление для install_block.
+        $view_install = \Drupal\views\Views::getView('docs_in_produkt');
+        if ($view_install) {
+            $view_install->setDisplay('install_block');
+            $view_install->setArguments([$id]);
+            $view_install->execute();
+            $variables['install_block_has_results'] = count($view_install->result) > 0;
+        }
+    }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function mirtek_theme_suggestions_mirtek_product(array $variables)
+{
+    $suggestions = [];
+    $entity = $variables['elements']['#mirtek_product'];
+    $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+    $suggestions[] = 'mirtek_product__' . $sanitized_view_mode;
+    $suggestions[] = 'mirtek_product__' . $entity->bundle();
+    $suggestions[] = 'mirtek_product__' . $entity->bundle() . '' . $sanitized_view_mode;
+    $suggestions[] = 'mirtek_product' . $entity->id();
+    $suggestions[] = 'mirtek_product__' . $entity->id() . '__' . $sanitized_view_mode;
+
+    return $suggestions;
+}
+
+/**
+ * Prepares variables for mirtek product templates.
+ *
+ * Default template: mirtek-product.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the mirtek product information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_mirtek_product_group(array &$variables) {
+    $variables['view_mode'] = $variables['elements']['#view_mode'];
+    $variables['mirtek_product_group'] = $variables['elements']['#mirtek_product_group'];
+
+    $view = \Drupal\views\Views::getView('teaser_products');
+
+    // Vary cache based on a specific query parameter.
+    $variables['#cache']['contexts'][] = 'url.query_args:field_country_target_id';
+    if ($view) {
+        $view->setExposedInput(\Drupal::request()->query->all());
+        $view->execute();
+
+        if ($view->id() == 'teaser_products') {
+            $selected_country = (int)$view->exposed_raw_input['field_country_target_id'] ?? NULL;
+            $variables['selected_country'] = $selected_country;
+        }
+    }
+
+    foreach (Element::children($variables['elements']) as $key) {
+        $variables['content'][$key] = $variables['elements'][$key];
+    }
+    $filtered_products = [];
+
+    foreach (Element::children($variables['content']['mirtek_product']) as $key) {
+        $product = $variables['content']['mirtek_product'][$key]['#mirtek_product'];
+        $product_country_id = (int)$product->get('field_country')->target_id;
+
+        if ($product_country_id === $selected_country){
+            $filtered_products[] = $variables['content']['mirtek_product'][$key];
+        }
+    }
+    $variables['content']['mirtek_product'] = $filtered_products;
+
+    // Получение URL первого элемента из массива $filtered_products
+    if (!empty($filtered_products)) {
+        $first_product = $filtered_products[0]['#mirtek_product'];
+        $url_object = $first_product->toUrl();
+        $variables['first_url_product'] = $url_object->setAbsolute()->toString();
+    } else {
+        $variables['first_url_product'] = NULL;
+    }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function mirtek_user_cancel($edit, UserInterface $account, $method) {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish mirtek products.
+      $storage = \Drupal::entityTypeManager()->getStorage('mirtek_product');
+      $mirtek_product_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->execute();
+      foreach ($storage->loadMultiple($mirtek_product_ids) as $mirtek_product) {
+        $mirtek_product->set('status', FALSE);
+        $mirtek_product->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize mirtek products.
+      $storage = \Drupal::entityTypeManager()->getStorage('mirtek_product');
+      $mirtek_product_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->execute();
+      foreach ($storage->loadMultiple($mirtek_product_ids) as $mirtek_product) {
+        $mirtek_product->setOwnerId(0);
+        $mirtek_product->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function mirtek_user_predelete(UserInterface $account) {
+  // Delete mirtek products.
+  $storage = \Drupal::entityTypeManager()->getStorage('mirtek_product');
+  $mirtek_product_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->execute();
+  $mirtek_products = $storage->loadMultiple($mirtek_product_ids);
+  $storage->delete($mirtek_products);
+}
+
+function mirtek_entity_operation_alter(array &$operations, \Drupal\Core\Entity\EntityInterface $entity) {
+    // Alter the title and weight.
+    $operations['clones'] = [
+        'title' => t('Clone group'),
+        'weight' => 50,
+        'url' => \Drupal\Core\Url::fromRoute('mirtek.clone', ['mirtek_product_group'=>$entity->id()]),
+    ];
+
+    return $operations;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for views exposed form.
+ */
+function mirtek_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    $view_id = $form_state->get('view')->id();
+    $display_id = $form_state->get('view')->current_display;
+
+    if ($view_id == 'teaser_products' && $display_id == 'page_1') {
+        // Получение ID текущего термина таксономии из контекста
+        $taxonomy_term_id = \Drupal::routeMatch()->getParameter('taxonomy_term');
+        $allowed_term_ids = [3, 4, 5, 7, 46]; // Разрешенные термины таксономии продукции
+
+        if ($taxonomy_term_id && !in_array($taxonomy_term_id->id(), $allowed_term_ids)) {
+            // Если текущий термин не в списке разрешённых, скрываем фильтр
+            if (isset($form['field_country_target_id'])) {
+                $form['field_country_target_id']['#access'] = false;
+            }
+        }
+    }
+}
+
+/**
+ * Implements hook_views_data().
+ */
+function mirtek_views_data() {
+    $data = [];
+
+    $data['views']['mirtek_product_filter'] = [
+        'title' => t('Mirtek Product filter - Custom Filter'),
+        'filter' => [
+            'title' => t('Mirtek Product filter - Custom Filter'),
+            'field' => 'label',
+            'id' => 'mirtek_product_filter',
+        ],
+    ];
+
+    return $data;
+}
+
+
+function mirtek_mirtek_product_group_delete(\Drupal\Core\Entity\EntityInterface $entity) {
+    $mirtek_products = $entity->get('mirtek_product')->referencedEntities();
+    foreach ($mirtek_products as $product) {
+        $product->delete();
+    }
+}
+
+/**
+ * Implements hook_node_presave().
+ */
+function mirtek_node_presave(\Drupal\node\NodeInterface $node) {
+    if ($node->bundle() !== 'document') {
+        return;
+    }
+    // Получаем значения полей.
+    $url = $node->get('field_url')->isEmpty() ? NULL : $node->get('field_url')->first()->getValue()['uri'];
+    $doc_file = $node->get('field_doc_file')->target_id;
+
+    // Если оба поля пусты, снимаем публикацию.
+    if (empty($url) && empty($doc_file)) {
+        $node->setUnpublished();
+        \Drupal::messenger()->addError(t('The node is unpublished because the file or link is missing'));
+    }
+}
+
+
+function mirtek_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if ($form_id == 'search_api_form') {
+        // Подключаем библиотеку JavaScript для клиентской валидации.
+        $form['#attached']['library'][] = 'mirtek/search_validation';
+    }
+}
+
+
+

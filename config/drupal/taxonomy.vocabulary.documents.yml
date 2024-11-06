@@ -1,0 +1,8 @@
+uuid: 1c8e90c2-b46e-446b-956c-d238e2ecd9df
+langcode: ru
+status: true
+dependencies: {  }
+name: Документы
+vid: documents
+description: 'Типы документов'
+weight: 0

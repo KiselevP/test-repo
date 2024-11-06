@@ -1,0 +1,22 @@
+uuid: b21809ee-b6b1-435a-b58f-21ff7c7c1daa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dokumentaciya.field_documents
+    - paragraphs.paragraphs_type.dokumentaciya
+id: paragraph.dokumentaciya.default
+targetEntityType: paragraph
+bundle: dokumentaciya
+mode: default
+content:
+  field_documents:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: dokuments_in_product
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

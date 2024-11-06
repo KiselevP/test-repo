@@ -1,0 +1,20 @@
+{%
+  set classes = [
+  'node',
+  'proizvodstvo-teaser',
+]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+    <a href="{{ url }}">
+        <div class="card-service">
+            {% if content %}
+                {{ content.field_image_preview|without('#theme') }}
+            {% endif %}
+            <div>
+                {{ label|typography }}
+                <span class="icon"></span>
+            </div>
+        </div>
+    </a>
+</article>

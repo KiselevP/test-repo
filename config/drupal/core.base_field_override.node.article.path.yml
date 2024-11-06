@@ -1,0 +1,20 @@
+uuid: cad8501d-293b-4dd1-b619-9f3041a7609a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - path
+id: node.article.path
+field_name: path
+entity_type: node
+bundle: article
+label: 'Синоним URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

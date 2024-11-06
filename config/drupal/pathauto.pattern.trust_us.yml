@@ -1,0 +1,22 @@
+uuid: 0d5109e4-5291-4c5c-ae58-0983ab7b330b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: trust_us
+label: 'Нам доверяют'
+type: 'canonical_entities:node'
+pattern: '/kompaniya/otzyvy/[node:title]'
+selection_criteria:
+  f97a47db-d944-4b28-aa7e-586da0651b98:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f97a47db-d944-4b28-aa7e-586da0651b98
+    context_mapping:
+      node: node
+    bundles:
+      trust_us: trust_us
+selection_logic: and
+weight: -5
+relationships: {  }

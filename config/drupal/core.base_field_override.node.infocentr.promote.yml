@@ -1,0 +1,22 @@
+uuid: 2ab22f80-d4af-449d-843c-7ec4056fe854
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.infocentr
+id: node.infocentr.promote
+field_name: promote
+entity_type: node
+bundle: infocentr
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

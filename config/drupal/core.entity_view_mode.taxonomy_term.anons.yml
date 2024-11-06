@@ -1,0 +1,11 @@
+uuid: 300df398-0f84-476d-b755-d82bcb6dba52
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.anons
+label: Анонс
+description: ''
+targetEntityType: taxonomy_term
+cache: true

@@ -1,0 +1,30 @@
+uuid: 62f40731-b0d9-480f-8275-3446ca06dbe3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.numbered_section_item.field_description
+    - field.field.paragraph.numbered_section_item.field_title_formatted
+    - paragraphs.paragraphs_type.numbered_section_item
+  module:
+    - text
+id: paragraph.numbered_section_item.default
+targetEntityType: paragraph
+bundle: numbered_section_item
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title_formatted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,39 @@
+uuid: 2135db7c-1b20-4245-8a20-78e4abe0d405
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tehnologicheskoe_partnyorstvo.body
+    - field.field.node.tehnologicheskoe_partnyorstvo.field_image
+    - field.field.node.tehnologicheskoe_partnyorstvo.field_reviews
+    - node.type.tehnologicheskoe_partnyorstvo
+  module:
+    - image
+    - user
+id: node.tehnologicheskoe_partnyorstvo.teaser
+targetEntityType: node
+bundle: tehnologicheskoe_partnyorstvo
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_reviews: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,85 @@
+uuid: 6d126bcd-20f9-4b5c-81b9-5e1a1b99fab0
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_order_item
+    - paragraphs.paragraphs_type.zakazhite_u_nas
+    - paragraphs.paragraphs_type.zakazhite_u_nas_item
+  module:
+    - entity_reference_revisions
+id: paragraph.zakazhite_u_nas.field_order_item
+field_name: field_order_item
+entity_type: paragraph
+bundle: zakazhite_u_nas
+label: 'Закажите у нас элемент'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      zakazhite_u_nas_item: zakazhite_u_nas_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_headline_text:
+        weight: 21
+        enabled: false
+      big_image_with_headline_text:
+        weight: 22
+        enabled: false
+      headline:
+        weight: 23
+        enabled: false
+      headline_text:
+        weight: 24
+        enabled: false
+      image:
+        weight: 25
+        enabled: false
+      image_with_title_and_text:
+        weight: 26
+        enabled: false
+      numbered_section:
+        weight: 27
+        enabled: false
+      numbered_section_item:
+        weight: 28
+        enabled: false
+      otzyv:
+        weight: 29
+        enabled: false
+      produkciya_block:
+        weight: 30
+        enabled: false
+      proizvodstvo_block:
+        weight: 31
+        enabled: false
+      row_novosti:
+        weight: 32
+        enabled: false
+      slider:
+        weight: 33
+        enabled: false
+      sybols:
+        weight: 34
+        enabled: false
+      sybols_item:
+        weight: 35
+        enabled: false
+      uslugi_block:
+        weight: 36
+        enabled: false
+      video_with_title_and_text:
+        weight: 37
+        enabled: false
+      zakazhite_u_nas:
+        weight: 20
+        enabled: false
+      zakazhite_u_nas_item:
+        weight: 38
+        enabled: true
+field_type: entity_reference_revisions

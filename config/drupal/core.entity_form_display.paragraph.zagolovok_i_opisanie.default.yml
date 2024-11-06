@@ -1,0 +1,33 @@
+uuid: 2ab05df8-894c-4806-ad2c-c6272f0c11e4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.zagolovok_i_opisanie.field_headline_div
+    - field.field.paragraph.zagolovok_i_opisanie.field_opisanie
+    - paragraphs.paragraphs_type.zagolovok_i_opisanie
+  module:
+    - heading
+    - text
+id: paragraph.zagolovok_i_opisanie.default
+targetEntityType: paragraph
+bundle: zagolovok_i_opisanie
+mode: default
+content:
+  field_headline_div:
+    type: heading
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_opisanie:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

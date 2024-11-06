@@ -1,0 +1,43 @@
+uuid: b9f03b42-c72e-49e1-b195-b2e63160e0b8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.row
+    - field.field.node.trust_us.body
+    - field.field.node.trust_us.field_image
+    - field.field.node.trust_us.field_reviews
+    - node.type.trust_us
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.trust_us.row
+targetEntityType: node
+bundle: trust_us
+mode: row
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_reviews: true
+  langcode: true

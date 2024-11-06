@@ -1,0 +1,18 @@
+uuid: 5bab2158-818d-46a4-b3d5-68873de14441
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Изменение
+description: 'The time that the content block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

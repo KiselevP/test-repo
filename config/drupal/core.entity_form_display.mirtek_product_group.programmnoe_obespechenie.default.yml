@@ -1,0 +1,79 @@
+uuid: 4006b18e-e12c-42f8-b4e7-5f7b0e2f3e4b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.mirtek_product_group.programmnoe_obespechenie.field_image
+    - field.field.mirtek_product_group.programmnoe_obespechenie.field_short_feature
+    - field.field.mirtek_product_group.programmnoe_obespechenie.field_tip_produkcii
+    - image.style.thumbnail
+    - mirtek.mirtek_product_group_type.programmnoe_obespechenie
+  module:
+    - image
+    - inline_entity_form
+    - text
+id: mirtek_product_group.programmnoe_obespechenie.default
+targetEntityType: mirtek_product_group
+bundle: programmnoe_obespechenie
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_short_feature:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  mirtek_product:
+    type: inline_entity_form_complex
+    weight: 2
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: true
+      collapsible: true
+      collapsed: false
+      revision: false
+      removed_reference: delete
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_tip_produkcii: true
+  uid: true

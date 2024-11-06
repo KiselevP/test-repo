@@ -1,0 +1,39 @@
+{%
+  set classes = [
+  'node',
+  'news-full',
+]
+%}
+
+{{ attach_library('mirtekgroup/swiper') }}
+
+<article{{ attributes.addClass(classes) }} style='background-image: url({{- background -}})'>
+
+
+      <div class="news-title h1">{{ label }}</div>
+      <div class="news-down">
+          <div class="news-tags">{{- content.field_tags_news|without('#theme') -}}</div>
+          <div class="news-date">{{ formatted_date }}</div>
+      </div>
+      <div class="swiper swiper-carousel">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              {% for item in content.field_images['#items'] %}
+                  <div class="swiper-slide">
+                      {% set image_file = item.entity %}
+                      <a href="{{ file_url(image_file.uri.value) }}" aria-controls="colorbox" class="colorbox cboxElement colorbox-example3" data-colorbox-gallery="productGallery" role="button" data-once="init-colorbox">
+                          <img src="{{ file_url(image_file.uri.value) }}" alt="{{ image_file.alt }}">
+                      </a>
+                  </div>
+              {% endfor %}
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+      <div class="news-text">{{- content.body|without('#theme')|typography -}}</div>
+
+
+</article>

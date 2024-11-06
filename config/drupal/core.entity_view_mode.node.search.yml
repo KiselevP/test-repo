@@ -1,0 +1,11 @@
+uuid: f9e8e61e-f692-4ce4-a6f7-c333cb7d39d6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.search
+label: Search
+description: ''
+targetEntityType: node
+cache: true

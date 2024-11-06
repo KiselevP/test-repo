@@ -1,0 +1,18 @@
+uuid: 4dfd46b1-9d19-4e5d-ade0-e3c94e35ef8f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.trust_us
+id: node.trust_us.created
+field_name: created
+entity_type: node
+bundle: trust_us
+label: 'Создан в'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

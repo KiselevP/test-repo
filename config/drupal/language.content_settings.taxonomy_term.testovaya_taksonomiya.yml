@@ -1,0 +1,11 @@
+uuid: a652bd2d-4e64-4487-af7a-1217b1b15338
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.testovaya_taksonomiya
+id: taxonomy_term.testovaya_taksonomiya
+target_entity_type_id: taxonomy_term
+target_bundle: testovaya_taksonomiya
+default_langcode: site_default
+language_alterable: false

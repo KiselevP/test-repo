@@ -1,0 +1,10 @@
+uuid: cdaeb739-407a-47b8-9d53-97c6b93a9198
+langcode: ru
+status: true
+dependencies: {  }
+id: numbered_section
+label: 'Нумерованный раздел'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,18 @@
+uuid: e189edc7-d51b-4401-92c4-d42b283a514b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.documents
+id: taxonomy_term.documents.name
+field_name: name
+entity_type: taxonomy_term
+bundle: documents
+label: Название
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

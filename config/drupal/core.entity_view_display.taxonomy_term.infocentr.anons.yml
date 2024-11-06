@@ -1,0 +1,37 @@
+uuid: 708c6323-0ada-4965-8929-17097bdead2e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.anons
+    - field.field.taxonomy_term.infocentr.field_image
+    - image.style.prevyu
+    - taxonomy.vocabulary.infocentr
+  module:
+    - image
+    - text
+id: taxonomy_term.infocentr.anons
+targetEntityType: taxonomy_term
+bundle: infocentr
+mode: anons
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: prevyu
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

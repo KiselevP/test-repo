@@ -1,0 +1,18 @@
+uuid: f323181c-8912-4bf1-bee0-25d7301ce1fb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.title
+field_name: title
+entity_type: node
+bundle: article
+label: Заголовок
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

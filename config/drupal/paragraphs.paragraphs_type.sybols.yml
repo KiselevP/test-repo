@@ -1,0 +1,10 @@
+uuid: cd10481e-496d-4c9e-8f41-6ba11026ef0a
+langcode: ru
+status: true
+dependencies: {  }
+id: sybols
+label: Sybols
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

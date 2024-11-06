@@ -1,0 +1,44 @@
+uuid: fdb117ce-c86e-43f7-816f-53da4f08af8d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.row
+    - field.field.node.tehnologicheskoe_partnyorstvo.body
+    - field.field.node.tehnologicheskoe_partnyorstvo.field_image
+    - field.field.node.tehnologicheskoe_partnyorstvo.field_reviews
+    - node.type.tehnologicheskoe_partnyorstvo
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.tehnologicheskoe_partnyorstvo.row
+targetEntityType: node
+bundle: tehnologicheskoe_partnyorstvo
+mode: row
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_reviews: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: cb86b8bf-f50e-4ba6-8598-a59bfa58c87d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: faq
+label: 'FAQ Term'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/faq/[term:name]'
+selection_criteria:
+  3c30af7f-efdf-4acb-b8e0-d098cb642bb4:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 3c30af7f-efdf-4acb-b8e0-d098cb642bb4
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      faq: faq
+selection_logic: and
+weight: -5
+relationships: {  }
