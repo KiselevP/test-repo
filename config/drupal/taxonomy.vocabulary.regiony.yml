@@ -1,8 +1,0 @@
-uuid: d540ae8c-3bf2-4d3f-b401-9e890593aaab
-langcode: ru
-status: true
-dependencies: {  }
-name: Регионы
-vid: regiony
-description: Регионы
-weight: 0

@@ -1,8 +1,0 @@
-uuid: 976b5024-6889-4aa0-be6b-b0c86a5729e3
-langcode: und
-status: true
-dependencies: {  }
-name: FAQ
-vid: faq
-description: 'Категории часто задаваемых вопросов'
-weight: 0

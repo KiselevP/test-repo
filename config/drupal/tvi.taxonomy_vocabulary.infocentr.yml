@@ -1,5 +1,0 @@
-enable_override: true
-view: infocentr
-view_display: page_1
-inherit_settings: true
-pass_arguments: true
